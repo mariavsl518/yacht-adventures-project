@@ -20,12 +20,35 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: #1F212D;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --dark-blue:#11131F;
+  --blue:#1F212D;
+  --light-green:#93ABAE;
+  --white:#F6F5EF;
+  --linear-gradient:#BEC7C2, #A1B5BA;
+}
+
+/* Верстка адаптивна, окрім мобільних пристроїв. 
+Точки перелому: - mobile: верстка гумова, 
+стає адаптивною з 375px; - tablet: з 768px; - desktop: з 1280px */
+
+.container{
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width:768px){
+    .container{
+        max-width: 768px;
+        padding: 0 32px;
+    }
+}
+
+@media screen and (min-width:1280px){
+    .container{
+        max-width: 1280px;
+    }
 }

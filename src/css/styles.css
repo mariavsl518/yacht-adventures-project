@@ -15,8 +15,8 @@
 @import url('./footer.css');
 
 @font-face {
-    font-family: 'DM Sans';
-    src: url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,500&display=swap');
+  font-family: 'DM Sans';
+  src: url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,500&display=swap');
 }
 
 :root {
@@ -25,38 +25,45 @@
   line-height: 1.4;
   font-weight: 400;
 
-  background-color: #1F212D;
+  background-color: #1f212d;
 
-  --dark-blue:#11131F;
-  --blue:#1F212D;
-  --light-green:#93ABAE;
-  --white:#F6F5EF;
-  --hover-green: #88B3B9;
-  --linear-gradient:#BEC7C2, #A1B5BA;
+  --dark-blue: #11131f;
+  --blue: #1f212d;
+  --light-green: #93abae;
+  --white: #f6f5ef;
+  --hover-green: #88b3b9;
+  --linear-gradient: #bec7c2, #a1b5ba;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
 }
 
 /* Верстка адаптивна, окрім мобільних пристроїв. 
 Точки перелому: - mobile: верстка гумова, 
 стає адаптивною з 375px; - tablet: з 768px; - desktop: з 1280px */
 
-.container{
+.container {
   min-width: 320px;
   max-width: 375px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
-@media screen and (min-width:768px){
-    .container{
-        max-width: 768px;
-        padding: 0 32px;
-    }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
 }
 
-@media screen and (min-width:1280px){
-    .container{
-        max-width: 1280px;
-    }
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
 }
 .visually-hidden {
   position: absolute;

@@ -35,13 +35,6 @@
   --linear-gradient: #bec7c2, #a1b5ba;
 }
 
-body {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  line-height: 1.4;
-  font-weight: 400;
-}
-
 /* Верстка адаптивна, окрім мобільних пристроїв. 
 Точки перелому: - mobile: верстка гумова, 
 стає адаптивною з 375px; - tablet: з 768px; - desktop: з 1280px */

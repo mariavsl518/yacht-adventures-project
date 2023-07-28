@@ -1,0 +1,122 @@
+:root {
+    --title-font: 'DM Sans', sans-serif;
+    --blue-2: #1F212D;
+    --dark-bkue: #11131F;
+    --light-green: #93ABAE;
+    --linear-green: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%);
+    --white: #F6F5EF;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul, ol {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 375px;
+    /* margin: 0 auto; */
+    padding: 0 20px;
+}
+
+/**
+  |============================
+  | YachtsBlock section
+  |============================
+*/
+.YachtsBlock {
+    background-color: var(--dark-bkue);
+    backdrop-filter: blur(200px);
+}
+
+.YachtsBlock-container {
+    position: relative;
+}
+
+.YachtsBlock-blur {
+    display: flex;
+    position: absolute;
+    left: -113px;
+    top: -96.3px;
+}
+
+.YachtsBlock-blurCircle {
+    width: 255px;
+    height: 255px;
+    transform: rotate(-44.916deg);
+    background-color: #91AFBA;
+    opacity: 0.6;
+    filter: blur(100px);
+}
+
+.YachtsBlock-blurCircle-small {
+    width: 195px;
+    height: 195px;
+    transform: rotate(-44.916deg);
+    background-color: #A6A9B2;
+    opacity: 0.3;
+    filter: blur(100px);
+}
+
+.YachtsBlock-title {
+    font-family: var(--title-font);
+    color: var(--white);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.05em;
+    margin-bottom: 40px;
+    max-width: 310px;
+}
+
+.YachtsBlock-button {
+    width: 131px;
+    height: 43px;
+    border-radius: 60px;
+    border: 1px solid var(--white);
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--title-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+    margin-bottom: 80px;
+}
+
+.slide-container {
+    width: 335px;
+    background-color: var(--blue-2);
+    border-radius: 24px;
+}
+
+.YachtsBlock-img {
+    margin: 0 auto;
+    padding-top: 18px;
+}
+
+/**
+  |============================
+  | Swiper
+  |============================
+*/
+.swiper {
+    width: 600px;
+    height: 300px;
+  }

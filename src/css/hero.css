@@ -1,0 +1,82 @@
+.hero {}
+
+.container {}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title {
+    color: var(--white);
+    font-family: DM Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -2.7px;
+    margin-bottom: 14px;
+}
+
+.hero-title-italic {
+    /*font-style: italic;*/
+    color: var(--linear-gradient);
+}
+
+.hero-description {
+    color: var(--white);
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+    margin-bottom: 24px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.button-started {
+    display: flex;
+    padding: 14px 28px;
+    align-items: flex-start;
+    border-radius: 60px;
+    background-color: var(--light-green);
+}
+
+.link-explore {
+    display: flex;
+    padding: 14px 28px;
+    align-items: flex-start;
+    border-radius: 60px;
+    border: 1px solid var(--white);
+    text-decoration: none;
+}
+
+.hero-card {}
+
+.bg-hero-card {}
+
+.circle {}
+
+.clients {}
+
+.hero-man {
+    min-width: 133px;
+    min-height: 133px;
+    border-radius: 24px;
+    background: url(../img/hero/man@1x.jpg), no-repeat, center, cover;
+}
+
+.hero-img-man {
+   
+}
+
+.hero-img-yaht {}
+
+.hero-price {}
+
+.hero-card-text {}

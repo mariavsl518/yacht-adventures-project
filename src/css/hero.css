@@ -42,9 +42,7 @@
 
 .button-started {
     color: var(--white);
-    display: flex;
     padding: 14px 28px;
-    align-items: center;
     border-radius: 60px;
     background-color: var(--light-green);
     box-shadow: none;
@@ -53,17 +51,27 @@
 
 .link-explore {
     color: var(--white);
-    display: flex;
     padding: 14px 28px;
-    align-items: center;
     border-radius: 60px;
     border: 1px solid var(--white);
     text-decoration: none;
 }
 
 .hero-card {
-    background-color: var(--linear-gradient);
-    width: ;
+    position: relative;
+    background: url(../img/hero/bgcardcolor.png) center/cover no-repeat;
+    width: 335px;
+    height: 427px;
+    padding: 24px 24px 48px 24px;
+}
+
+.hero-card:before {
+    content: '';
+    position: absolute;
+    background: url(../img/hero/bgcard.png) center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: screen;
 }
 
 .bg-hero-card {}
@@ -76,7 +84,9 @@
     filter: blur(100px);
 }
 
-.hero-clients {}
+.hero-clients {
+    margin-bottom: 52px;
+}
 
 .hero-faces {
     max-width: 135px;
@@ -92,6 +102,20 @@
     border: 2px solid var(--light-green);
 }
 
+.face1 {
+    background: url(../img/hero/client1.png) center/cover no-repeat;
+    z-index: 5;
+}
+.face2 {
+    background: url(../img/hero/client2.png) center/cover no-repeat;
+    z-index: 4;
+}
+.face3 {
+    background: url(../img/hero/client3.png) center/cover no-repeat;
+    z-index: 3;
+}
+
+
 .hero-text-clients {
     color: var(--darl-blue);
     font-size: 14px;
@@ -103,15 +127,18 @@
 }
 
 .hero-man {
+    position: absolute;
+    top: 35px;
+    left: 214px;
     min-width: 133px;
     min-height: 133px;
     border-radius: 24px;
-    background: url(../img/hero/man@1x.jpg), no-repeat, center, cover;
 }
 
 .hero-img-yaht {
     width: 287px;
     height: 167px;
+    margin-bottom: 14px;
 }
 
 .hero-card-description {

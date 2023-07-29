@@ -60,7 +60,10 @@
     text-decoration: none;
 }
 
-.hero-card {}
+.hero-card {
+    background-color: var(--linear-gradient);
+    width: ;
+}
 
 .bg-hero-card {}
 
@@ -105,7 +108,10 @@
     background: url(../img/hero/man@1x.jpg), no-repeat, center, cover;
 }
 
-.hero-img-yaht {}
+.hero-img-yaht {
+    width: 287px;
+    height: 167px;
+}
 
 .hero-card-description {
     display: inline-flex;

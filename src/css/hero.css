@@ -44,17 +44,18 @@
     color: var(--white);
     display: flex;
     padding: 14px 28px;
-    align-items: flex-start;
+    align-items: center;
     border-radius: 60px;
     background-color: var(--light-green);
     box-shadow: none;
+    border: none;
 }
 
 .link-explore {
     color: var(--white);
     display: flex;
     padding: 14px 28px;
-    align-items: flex-start;
+    align-items: center;
     border-radius: 60px;
     border: 1px solid var(--white);
     text-decoration: none;

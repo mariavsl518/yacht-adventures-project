@@ -16,8 +16,8 @@
 
 @font-face {
   font-family: 'DM Sans';
-  src: url(./DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf), 
-        url(./DM_Sans/DMSans-VariableFont_opsz\,wght.ttf);
+  src: url(../DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf), 
+        url(../DM_Sans/DMSans-VariableFont_opsz\,wght.ttf);
 }
 
 :root {

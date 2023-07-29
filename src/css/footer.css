@@ -1,9 +1,9 @@
-a{
-    text-decoration: none;
-}
-
+ /*===============  
+      Mobile 
+================  */
 .footer-container{
-   border: 2px solid white;
+   /* border: 2px solid white;
+  */
 }
 
 .footer-flex {}
@@ -152,6 +152,25 @@ a{
     letter-spacing: 0.36px;
 }
 
+.footer-gradient{
+    width: 420px;
+    height: 420px;
+    top: 265px;
+    left: 65px;
+    position: absolute;
+    margin: 0;
+    transform: rotate(-45.408deg);
+    flex-shrink: 0;
+    border-radius: 420px;
+    opacity: 0.6;
+    background: var(--light-green, #93ABAE);
+    filter: blur(100px);
+}
+
+/*===============  
+      Tablet 
+================  */
+
 @media screen and (min-width: 768px) {
 
 .footer-container{
@@ -164,7 +183,6 @@ a{
     align-items: flex-start;
     
 }
-
 
 .footer-logo {
         padding: 65px 0;
@@ -287,7 +305,26 @@ a{
         /* 14.16px */
         letter-spacing: 0.42px;
     }
+
+    .footer-gradient {
+        width: 420px;
+        height: 420px;
+        top: 265px;
+        left: 340px;
+        position: absolute;
+        margin: 0;
+        transform: rotate(-45.408deg);
+        flex-shrink: 0;
+        border-radius: 420px;
+        opacity: 0.6;
+        background: var(--light-green, #93ABAE);
+        filter: blur(100px);
+    }
 } 
+
+/*===============  
+      Desktop 
+================  */
 
 @media screen and (min-width: 1280px) {
 
@@ -425,5 +462,35 @@ a{
         line-height: 118%;
         /* 14.16px */
         letter-spacing: 0.42px;
+    }
+
+    .footer-gradient {
+        width: 420px;
+        height: 420px;
+        top: 265px;
+        left:280px;
+        position: absolute;
+        margin: 0;
+        transform: rotate(-45.408deg);
+        flex-shrink: 0;
+        border-radius: 420px;
+        opacity: 0.6;
+        background: var(--light-green, #93ABAE);
+        filter: blur(100px);
+    }
+
+    .footer-gradient-right{
+        width: 317px;
+            height: 317px;
+            top: 280px;
+            left: 750px;
+            position: absolute;
+            margin: 0;
+            transform: rotate(-45.408deg);
+            flex-shrink: 0;
+            border-radius: 420px;
+            opacity: 0.6;
+            background: var(--light-green, #93ABAE);
+            filter: blur(100px);
     }
 }

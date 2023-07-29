@@ -1,0 +1,62 @@
+.review-title-accent {
+    font-style: italic;
+}
+
+.block-review-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -1.44px;
+    color: var(--white);
+
+    width: 497px;
+    height: 114px;
+}
+
+.block-review-desk {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    color: var(--white);
+
+    width: 273px;
+    height: 110px;
+}
+
+.block-review-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+}
+
+.block-review-item {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 24px;
+    color: ;
+    background-color: #11131f;
+
+    width: 384px;
+    height: 282px;
+    align-items: center;
+    gap: 8px;
+
+    padding: 32px;
+}
+
+.review-people-name {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.81px;
+    color: var(--white);
+    text-align: center;
+}
+
+.review-desk {
+    letter-spacing: -0.32px;
+    color: rgba(246, 245, 239, 0.50);
+    width: 100%;
+    text-align: center;
+}

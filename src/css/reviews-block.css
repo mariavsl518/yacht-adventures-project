@@ -13,10 +13,17 @@
     height: 114px;
 }
 
+.block-review-enter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .block-review-desk {
     font-size: 16px;
     letter-spacing: -0.32px;
     color: var(--white);
+    font-style: normal;
 
     width: 273px;
     height: 110px;
@@ -26,7 +33,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-
+    margin-top: 64px;
 }
 
 .block-review-item {
@@ -37,11 +44,14 @@
     background-color: #11131f;
 
     width: 384px;
-    height: 282px;
     align-items: center;
     gap: 8px;
 
     padding: 32px;
+}
+
+.block-review-img {
+    margin-bottom: 16px;
 }
 
 .review-people-name {

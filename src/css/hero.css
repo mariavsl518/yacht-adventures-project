@@ -1,0 +1,137 @@
+.hero {}
+
+.container {}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+}
+
+.hero-title {
+    color: var(--white);
+    font-family: DM Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -2.7px;
+    margin-bottom: 14px;
+}
+
+.hero-title-italic {
+    /*font-style: italic;*/
+    color: var(--linear-gradient);
+}
+
+.hero-description {
+    color: var(--white);
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+    margin-bottom: 24px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.button-started {
+    color: var(--white);
+    display: flex;
+    padding: 14px 28px;
+    align-items: center;
+    border-radius: 60px;
+    background-color: var(--light-green);
+    box-shadow: none;
+    border: none;
+}
+
+.link-explore {
+    color: var(--white);
+    display: flex;
+    padding: 14px 28px;
+    align-items: center;
+    border-radius: 60px;
+    border: 1px solid var(--white);
+    text-decoration: none;
+}
+
+.hero-card {
+    background-color: var(--linear-gradient);
+    width: ;
+}
+
+.bg-hero-card {}
+
+.hero-circle {
+    width: 279px;
+    height: 279px;
+    border-radius: 279px;
+    background: #91AFBA;
+    filter: blur(100px);
+}
+
+.hero-clients {}
+
+.hero-faces {
+    max-width: 135px;
+    display: flex;
+    gap: -6px;
+    margin-bottom: 11px;
+}
+
+.heroclient {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    border: 2px solid var(--light-green);
+}
+
+.hero-text-clients {
+    color: var(--darl-blue);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+}
+
+.hero-man {
+    min-width: 133px;
+    min-height: 133px;
+    border-radius: 24px;
+    background: url(../img/hero/man@1x.jpg), no-repeat, center, cover;
+}
+
+.hero-img-yaht {
+    width: 287px;
+    height: 167px;
+}
+
+.hero-card-description {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.hero-price {
+    color: var(--darl-blue);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -2.16px;
+    text-transform: uppercase;
+}
+
+.hero-card-text {
+    color: var(--darl-blue);
+    letter-spacing: -0.63px;
+}

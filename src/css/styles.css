@@ -16,7 +16,10 @@
 
 @font-face {
   font-family: 'DM Sans';
-  src: url(https://fonts.google.com/share?selection.family=DM%2BSans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,500);
+  src: url(../fonts/DMSans-Regular.ttf);
+  src: url(../fonts/DMSans-Medium.ttf);
+  src: url(../fonts/DMSans-MediumItalic.ttf);
+  src: url(../fonts/DMSans-Bold.ttf);
 }
 
 :root {
@@ -25,7 +28,7 @@
   line-height: 1.4;
   font-weight: 400;
 
-  background-color: #1f212d;
+  background-color: #11131F;
 
   --dark-blue: #11131f;
   --blue: #1f212d;

@@ -1,3 +1,8 @@
+.block-review-section {}
+
+.block-review-container {
+}
+
 .block-review-enter {
     display: flex;
     flex-direction: row;
@@ -25,7 +30,7 @@
 
 .review-title-accent {
     font-style: italic;
-    color: #bec7c2;
+    color: var(--light-green);
 }
 
 .block-review-title {
@@ -100,20 +105,21 @@
 .block-review-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 24px;
     margin-top: 64px;
 }
 
 @media only screen and (min-width:320px) and (max-width:767px) {
     .block-review-list {
         margin-top: 40px;
-        gap: 16px;
+        gap: 24px;
     }
 }
 
 @media only screen and (min-width:768px) and (max-width:1279px) {
     .block-review-list {
-        gap: 16px;
+        column-gap: 16px;
+        row-gap: 24px;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -123,6 +129,7 @@
 @media only screen and (min-width:1280px) {
     .block-review-list {
         flex-wrap: nowrap;
+        gap: 32px;
     }
 }
 
@@ -131,7 +138,7 @@
     flex-direction: column;
 
     border-radius: 24px;
-    background-color: #1f212d;
+    background-color: var(--blue);
 
     width: 100%;
     align-items: center;
@@ -219,3 +226,18 @@
         align-self: stretch;
     }
 }
+
+
+
+
+.arrow-up-btn {
+    position: sticky;
+    bottom: 32px;
+    right: 32px;
+
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+

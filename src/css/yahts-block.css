@@ -1,7 +1,7 @@
 :root {
     --title-font: 'DM Sans', sans-serif;
     --blue-2: #1F212D;
-    --dark-bkue: #11131F;
+    --dark-blue: #11131F;
     --light-green: #93ABAE;
     --linear-green: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%);
     --white: #F6F5EF;
@@ -26,11 +26,10 @@ ul, ol {
 	padding-left: 0;
 }
 
-.container {
-    min-width: 320px;
-    max-width: 375px;
-    /* margin: 0 auto; */
-    padding: 0 20px;
+img {
+	display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /**
@@ -39,7 +38,7 @@ ul, ol {
   |============================
 */
 .YachtsBlock {
-    background-color: var(--dark-bkue);
+    background-color: var(--dark-blue);
     backdrop-filter: blur(200px);
 }
 
@@ -54,6 +53,20 @@ ul, ol {
     top: -96.3px;
 }
 
+@media only screen and (min-width: 768px) {
+  .YachtsBlock-blur {
+    left: -49px;
+    top: -174px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+    .YachtsBlock-blur {
+      right: 142px;
+      top: -147px;
+    }
+  }
+
 .YachtsBlock-blurCircle {
     width: 255px;
     height: 255px;
@@ -63,6 +76,22 @@ ul, ol {
     filter: blur(100px);
 }
 
+@media only screen and (min-width: 768px) {
+  .YachtsBlock-blurCircle {
+    width: 399px;
+    height: 399px;
+    border-radius: 399px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+    .YachtsBlock-blurCircle {
+      width: 414px;
+      height: 414px;
+      border-radius: 414px;
+    }
+  }
+
 .YachtsBlock-blurCircle-small {
     width: 195px;
     height: 195px;
@@ -71,6 +100,22 @@ ul, ol {
     opacity: 0.3;
     filter: blur(100px);
 }
+
+@media only screen and (min-width: 768px) {
+  .YachtsBlock-blurCircle-small {
+    width: 304px;
+    height: 304px;
+    border-radius: 304px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+    .YachtsBlock-blurCircle-small {
+      width: 316px;
+      height: 316px;
+      border-radius: 316px;
+    }
+  }
 
 .YachtsBlock-title {
     font-family: var(--title-font);
@@ -83,6 +128,22 @@ ul, ol {
     margin-bottom: 40px;
     max-width: 310px;
 }
+
+@media only screen and (min-width: 768px) {
+  .YachtsBlock-title {
+    font-size: 70px;
+    margin: 0 auto;
+    max-width: 641px;
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+    .YachtsBlock-title {
+      font-size: 100px;
+      max-width: 882px;
+    }
+  }
 
 .YachtsBlock-button {
     width: 131px;
@@ -100,23 +161,126 @@ ul, ol {
     margin-bottom: 80px;
 }
 
-.slide-container {
-    width: 335px;
-    background-color: var(--blue-2);
-    border-radius: 24px;
+@media only screen and (min-width: 768px) {
+  .YachtsBlock-button {
+    margin-left: 32px;
+  }
 }
 
-.YachtsBlock-img {
-    margin: 0 auto;
-    padding-top: 18px;
-}
-
+@media only screen and (min-width: 1280px) {
+    .YachtsBlock-button {
+      margin-left: 167px;
+    }
+  }
 /**
   |============================
   | Swiper
   |============================
 */
-.swiper {
-    width: 600px;
-    height: 300px;
+.swiper-slide {
+    max-width: 335px;
+    background-color: var(--blue-2);
+    border-radius: 24px;
+    padding: 18px 18px 24px;
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper-slide {
+    max-width: 344px;
+    margin-bottom: 32px;
+    padding: 16px 16px 32px;
   }
+}
+
+@media only screen and (min-width: 1280px) {
+    .swiper-slide {
+      max-width: 354px;
+    }
+  }
+
+.YachtsBlock-img {
+    margin-bottom: 24px;
+    background-color: var(--blue-2);
+}
+
+@media only screen and (min-width: 768px) {
+  .YachtsBlock-img {
+    margin-bottom: 32px;
+  }
+}
+
+.swiper-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 6px 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper-title {
+    margin: 0 16px 32px;
+  }
+}
+
+.yacht-name {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+    max-width: 177px;
+}
+
+.luxury-yachts {
+color: var(--white);
+font-size: 12px;
+font-weight: 400;
+line-height: 1.2;
+letter-spacing: 0.03em;;
+text-transform: uppercase;
+opacity: 0.5;
+}
+
+table {
+    border-spacing: 0;
+    border: 0px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin: 0 6px 0;
+    border-spacing: 0 6px;
+}
+
+@media only screen and (min-width: 768px) {
+  table {
+    margin: 0 16px 0;
+  }
+}
+
+tr:not(:last-child) {
+    border: 0px;
+}
+
+.second-row {
+    padding-left: 32px;
+}
+
+.swiper-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.swiper-button {
+    max-width: 46px;
+    display: flex;
+    padding: 14px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 60px;
+    border: 1px solid var(--white);
+}

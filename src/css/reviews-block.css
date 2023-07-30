@@ -274,12 +274,12 @@
 
 @media screen and (min-width:768px) {
     .arrow-up-icon {
-            width: 68px;
-            height: 68px;
+        width: 68px;
+        height: 68px;
         }
 
     .back-to-top-button:hover,
     .back-to-top-button:active{
-            transform: scale(1.1);
+        transform: scale(1.1);
 }  
 }

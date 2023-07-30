@@ -18,7 +18,7 @@
   font-family: 'DM Sans';
   src: url(../fonts/DMSans-VariableFont_opsz\,wght.ttf);
 
-  
+
   /* src: url(../fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf); 
   src: url(../fonts/DMSans-Regular.ttf);
   src: url(../fonts/DMSans-Medium.ttf);
@@ -78,21 +78,4 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.arrow-up-cont {
-    position: sticky;
-    bottom: 32px;
-    
-}
-.arrow-up-btn-in{
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    position: relative;
-    right: 0;
-    transition: .4s cubic-bezier(.5,-0.45,.5,1.45);
-}
-
-.arrow-up-btn-in:hover{
-  transform: scale(1.1);
 }

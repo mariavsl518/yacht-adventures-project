@@ -199,27 +199,16 @@ img {
     }
   }
 
-.YachtsBlock-img {
-    margin-bottom: 24px;
-    background-color: var(--blue-2);
-}
-
-@media only screen and (min-width: 768px) {
-  .YachtsBlock-img {
-    margin-bottom: 32px;
-  }
-}
-
 .swiper-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 6px 24px;
+    margin: 24px 6px;
 }
 
 @media only screen and (min-width: 768px) {
   .swiper-title {
-    margin: 0 16px 32px;
+    margin-bottom: 32px;
   }
 }
 

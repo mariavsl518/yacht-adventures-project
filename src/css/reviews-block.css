@@ -227,14 +227,4 @@
     }
 }
 
-.arrow-up-btn {
-    position: sticky;
-    bottom: 32px;
-    right: 32px;
-
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-}
 

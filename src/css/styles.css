@@ -16,10 +16,14 @@
 
 @font-face {
   font-family: 'DM Sans';
-  src: url(../fonts/DMSans-Regular.ttf);
+  src: url(../fonts/DMSans-VariableFont_opsz\,wght.ttf);
+  src: url(../fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf);
+
+  
+  /* src: url(../fonts/DMSans-Regular.ttf);
   src: url(../fonts/DMSans-Medium.ttf);
   src: url(../fonts/DMSans-MediumItalic.ttf);
-  src: url(../fonts/DMSans-Bold.ttf);
+  src: url(../fonts/DMSans-Bold.ttf); */
 }
 
 :root {
@@ -36,6 +40,7 @@
   --white: #f6f5ef;
   --hover-green: #88b3b9;
   --linear-gradient: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
+  --animation: .4s cubic-bezier(.5,-0.45,.5,1.45);
 }
 
 /* Верстка адаптивна, окрім мобільних пристроїв. 
@@ -72,4 +77,21 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.arrow-up-btn {
+    position: sticky;
+    bottom: 32px;
+    
+}
+.arrow-up-btn-in{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: relative;
+    right: 0;
+    transition: .4s cubic-bezier(.5,-0.45,.5,1.45);
+}
+
+.arrow-up-btn-in:hover{
+  transform: scale(1.1);
 }

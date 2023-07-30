@@ -1,3 +1,22 @@
+.block-review-section {
+    margin-bottom: 43px;
+}
+
+@media screen and (min-width:768px) and (max-width:1279px) {
+    .block-review-section {
+            margin-bottom: 45px;
+        }
+}
+
+@media screen and (min-width:1280px) {
+    .block-review-section {
+        margin-bottom: 64px;
+    }
+}
+
+.block-review-container {
+}
+
 .block-review-enter {
     display: flex;
     flex-direction: row;
@@ -25,7 +44,7 @@
 
 .review-title-accent {
     font-style: italic;
-    color: #bec7c2;
+    color: var(--light-green);
 }
 
 .block-review-title {
@@ -33,6 +52,7 @@
     font-weight: 500;
     line-height: 1.2;
     color: var(--white);
+    letter-spacing: -1.08px;
 
     width: 497px;
 }
@@ -53,6 +73,7 @@
 @media only screen and (min-width:768px) {
     .block-review-title {
         font-size: 32px;
+        letter-spacing: -1.44px;
     }
 }
 
@@ -63,10 +84,10 @@
     }
 }
 
-
 .block-review-desk {
     font-size: 14px;
     color: var(--white);
+    letter-spacing: -0.28px;
 
     width: 273px;
 }
@@ -94,26 +115,28 @@
 @media only screen and (min-width:768px) {
     .block-review-desk {
         font-size: 16px;
+        letter-spacing: -0.32px;
     }
 }
 
 .block-review-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 24px;
     margin-top: 64px;
 }
 
 @media only screen and (min-width:320px) and (max-width:767px) {
     .block-review-list {
         margin-top: 40px;
-        gap: 16px;
+        gap: 24px;
     }
 }
 
 @media only screen and (min-width:768px) and (max-width:1279px) {
     .block-review-list {
-        gap: 16px;
+        column-gap: 16px;
+        row-gap: 24px;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -123,6 +146,7 @@
 @media only screen and (min-width:1280px) {
     .block-review-list {
         flex-wrap: nowrap;
+        gap: 32px;
     }
 }
 
@@ -131,19 +155,13 @@
     flex-direction: column;
 
     border-radius: 24px;
-    background-color: #1f212d;
+    background-color: var(--blue);
 
     width: 100%;
     align-items: center;
     gap: 8px;
 
     padding: 32px;
-}
-
-@media only screen and (min-width:320px) and (max-width:767px) {
-    .block-review-item {
-
-    }
 }
 
 @media only screen and (min-width:320px) and (max-width:767px) {
@@ -192,17 +210,20 @@
     font-weight: 500;
     line-height: 1.1;
     color: var(--white);
+    letter-spacing: -0.72px;
     text-align: center;
 }
 
 @media only screen and (min-width:768px) {
     .review-people-name {
         font-size: 18px;
+        letter-spacing: -0.81px;
     }
 }
 
 .review-desk {
     font-size: 12px;
+    letter-spacing: -0.24px;
     color: rgba(246, 245, 239, 0.50);
     width: 100%;
     text-align: center;
@@ -217,5 +238,48 @@
     .review-desk {
         font-size: 16px;
         align-self: stretch;
+        letter-spacing: -0.32px;
     }
+}
+
+.arrow-up-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.arrow-up-cont {
+    position: sticky;
+    bottom: 32px;
+    right: 32px;
+    text-align: right;
+}
+
+.back-to-top-button {
+    position: sticky;
+    bottom: 32px;
+    right: 32px;
+    margin-right: 0;
+    margin-left: auto;
+    transition: .4s cubic-bezier(.5,-0.45,.5,1.45);
+}
+
+
+
+.arrow-up-icon {
+    width: 44px;
+    height: 44px;
+}
+
+@media screen and (min-width:768px) {
+    .arrow-up-icon {
+            width: 68px;
+            height: 68px;
+        }
+
+    .back-to-top-button:hover,
+    .back-to-top-button:active{
+            transform: scale(1.1);
+}  
 }

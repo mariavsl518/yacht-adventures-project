@@ -26,5 +26,8 @@
       <path fill="#93abae" style="fill:var(--color1, #93abae)" d="M5.818 0h20.364A5.818 5.818 0 0 1 32 5.818v20.364A5.818 5.818 0 0 1 26.182 32H5.818A5.818 5.818 0 0 1 0 26.182V5.818A5.818 5.818 0 0 1 5.818 0z"/>
       <path fill="#f6f5ef" style="fill:var(--color2, #f6f5ef)" d="M13.091 13.737 16 10.181l2.909 3.556h-2.405v8.081h-1.008v-8.081h-2.405z"/>
     </symbol>
+    <symbol id="icon-fontisto_yacht" viewBox="0 0 32 32">
+      <path d="M0 0h32v32h-32v-32z"></path>
+    </symbol>
   </defs>
 </svg>

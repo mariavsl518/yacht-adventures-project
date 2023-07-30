@@ -1,4 +1,6 @@
-.block-review-section {}
+.block-review-section {
+    margin-bottom: 64px;
+}
 
 .block-review-container {
 }
@@ -228,13 +230,15 @@
 }
 
 .arrow-up-btn {
-    position: sticky;
-    bottom: 32px;
-    right: 32px;
-
     background-color: transparent;
     border: none;
     padding: 0;
     cursor: pointer;
 }
 
+.arrow-up-cont {
+    position: sticky;
+    bottom: 32px;
+    right: 32px;
+    text-align: right;
+}

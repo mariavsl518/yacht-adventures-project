@@ -74,6 +74,22 @@
 .about-img-item:not(:last-child) {
   margin-bottom: 24px;
 }
+@media only screen and (min-width: 768px) {
+  .about-img-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .about-img-second {
+    position: relative;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .about-img-last {
+    position: absolute;
+    top: 200px;
+  }
+}
 .about-img-last {
   margin-left: auto;
 }

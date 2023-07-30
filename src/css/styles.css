@@ -17,10 +17,10 @@
 @font-face {
   font-family: 'DM Sans';
   src: url(../fonts/DMSans-VariableFont_opsz\,wght.ttf);
-  src: url(../fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf);
 
   
-  /* src: url(../fonts/DMSans-Regular.ttf);
+  /* src: url(../fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf); 
+  src: url(../fonts/DMSans-Regular.ttf);
   src: url(../fonts/DMSans-Medium.ttf);
   src: url(../fonts/DMSans-MediumItalic.ttf);
   src: url(../fonts/DMSans-Bold.ttf); */
@@ -28,6 +28,7 @@
 
 :root {
   font-family: 'DM Sans', sans-serif;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.4;
   font-weight: 400;
@@ -78,7 +79,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.arrow-up-btn {
+.arrow-up-cont {
     position: sticky;
     bottom: 32px;
     

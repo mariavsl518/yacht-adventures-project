@@ -262,7 +262,10 @@
     right: 32px;
     margin-right: 0;
     margin-left: auto;
+    transition: .4s cubic-bezier(.5,-0.45,.5,1.45);
 }
+
+
 
 .arrow-up-icon {
     width: 44px;
@@ -274,4 +277,9 @@
             width: 68px;
             height: 68px;
         }
+
+    .back-to-top-button:hover,
+    .back-to-top-button:active{
+            transform: scale(1.1);
+}  
 }

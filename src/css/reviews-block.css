@@ -242,3 +242,11 @@
     right: 32px;
     text-align: right;
 }
+
+.back-to-top-button {
+    position: sticky;
+    bottom: 32px;
+    right: 32px;
+    margin-right: 0;
+    margin-left: auto;
+}

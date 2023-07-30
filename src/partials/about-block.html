@@ -27,7 +27,7 @@
               ./img/about/yaht1-desktop@1x.png 1x,
               ./img/about/yaht1-desktop@2x.png 2x
             "
-            type="image"
+            type="image/png"
           />
           <source
             media="(min-width: 768px)"
@@ -35,25 +35,19 @@
               ./img/about/yaht1-tablet@1x.png 1x,
               ./img/about/yaht1-tablet@2x.png 2x
             "
-            type="image"
+            type="image/png"
           />
           <source
-            media="(min-width: 320px) and (max-width:767px)"
             srcset="
-              ./img/about/yaht1-phone@1x.png  1x,
-              ./img/about/yaht1-phonet@2x.png 2x
-            "
-            type="image"
-          />
-          <img
-            class="about-img"
-            srcset="
-              ./img/about/yaht1-phone@1x.png 1x,
+              ./img/about/yaht1-phone@1x.png,
               ./img/about/yaht1-phone@2x.png 2x
             "
+            type="image/png"
+          />
+          <img
+            class="about-img about-img-first"
+            srcset="./img/about/yaht1-desktop@1x.png"
             alt="yaht1"
-            width="335"
-            height="524"
           />
         </picture>
       </li>
@@ -65,7 +59,7 @@
               ./img/about/yaht2-tablet-desktop@1x.png 1x,
               ./img/about/yaht2-tablet-desktop@2x.png 2x
             "
-            type="image"
+            type="image/png"
           />
           <source
             media="(min-width: 768px)"
@@ -73,17 +67,20 @@
               ./img/about/yaht2-tablet-desktop@1x.png 1x,
               ./img/about/yaht2-tablet-desktop@2x.png 2x
             "
-            type="image"
+            type="image/png"
           />
-          <img
-            class="about-img"
+          <source
+            media="(min-width: 320px)"
             srcset="
               ./img/about/yaht2-phone@1x.png 1x,
               ./img/about/yaht2-phone@2x.png 2x
             "
+            type="image/png"
+          />
+          <img
+            class="about-img about-img-second"
+            srcset="./img/about/yaht2-tablet-desktop@1x.png"
             alt="yaht2"
-            width="335"
-            height="289"
           />
         </picture>
       </li>
@@ -95,7 +92,7 @@
               ./img/about/yaht3-all@1x.png 1x,
               ./img/about/yaht3-all@2x.png 2x
             "
-            type="image"
+            type="image/png"
           />
           <source
             media="(min-width: 768px)"
@@ -103,17 +100,20 @@
               ./img/about/yaht3-all@1x.png 1x,
               ./img/about/yaht3-all@2x.png 2x
             "
-            type="image"
+            type="image/png"
           />
-          <img
-            class="about-img about-img-last"
+          <source
+            media="(min-width: 320px)"
             srcset="
               ./img/about/yaht3-all@1x.png 1x,
               ./img/about/yaht3-all@2x.png 2x
             "
+            type="image/png"
+          />
+          <img
+            class="about-img about-img-last"
+            srcset="./img/about/yaht3-all@1x.png"
             alt="yaht3"
-            width="260"
-            height="244"
           />
         </picture>
       </li>

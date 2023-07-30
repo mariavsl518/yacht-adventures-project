@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     width: 335px;
+    margin-bottom: 40px;
 }
 
 .hero-title {
@@ -20,8 +21,20 @@
 }
 
 .hero-title-italic {
-    /*font-style: italic;*/
-    color: var(--linear-gradient);
+    color: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+}
+
+@media screen and (min-width: 768px) {
+    .hero-text {
+        width: 704px;
+        margin-bottom: 64px;
+    }
+    .hero-title-italic {
+        font-style: italic;
+    }
+    .hero-description {
+        margin-right: 159px;
+    }
 }
 
 .hero-description {
@@ -38,13 +51,16 @@
 .hero-buttons {
     display: flex;
     gap: 8px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.81px;
 }
 
 .button-started {
     color: var(--white);
-    display: flex;
     padding: 14px 28px;
-    align-items: center;
     border-radius: 60px;
     background-color: var(--light-green);
     box-shadow: none;
@@ -53,35 +69,60 @@
 
 .link-explore {
     color: var(--white);
-    display: flex;
     padding: 14px 28px;
-    align-items: center;
     border-radius: 60px;
     border: 1px solid var(--white);
     text-decoration: none;
 }
 
 .hero-card {
-    background-color: var(--linear-gradient);
-    width: ;
+    position: relative;
+    background: url(../img/hero/card.png) center/cover no-repeat;
+    width: 335px;
+    height: 427px;
+    border-radius: 24px;
+    padding: 24px 24px 48px 24px;
 }
 
-.bg-hero-card {}
+@media screen and (min-width: 768px) {
+    .hero-card {
+        width: 426px;
+        height: 598px;
+        padding: 32px 32px 64px 32px;
+    }
+}
 
 .hero-circle {
+    background: #91AFBA;
+    filter: blur(100px);
+    z-index: -1;
+}
+
+.circle1 {
     width: 279px;
     height: 279px;
     border-radius: 279px;
-    background: #91AFBA;
-    filter: blur(100px);
+    transform: rotate(-44.916deg);
+    position: absolute;
+    left: -181px;
+    top: -25.85px;
 }
 
-.hero-clients {}
+.circle2 {
+    display: none;
+
+}
+
+.circle3 {
+    display: none;
+}
+
+.hero-clients {
+    margin-bottom: 52px;
+}
 
 .hero-faces {
-    max-width: 135px;
     display: flex;
-    gap: -6px;
     margin-bottom: 11px;
 }
 
@@ -90,6 +131,33 @@
     height: 48px;
     border-radius: 48px;
     border: 2px solid var(--light-green);
+    margin-right: -8px;
+}
+
+.face1 {
+    background: url(../img/hero/client1.png) center/cover no-repeat;
+    z-index: 5;
+    
+}
+.face2 {
+    background: url(../img/hero/client2.png) center/cover no-repeat;
+    z-index: 4;
+}
+.face3 {
+    background: url(../img/hero/client3.png) center/cover no-repeat;
+    z-index: 3;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-clients {
+        margin-bottom: 111px;
+    }
+    .heroclient {
+        width: 56px;
+        height: 56px;
+        border-radius: 56px;
+        margin-right: -11px;
+    }
 }
 
 .hero-text-clients {
@@ -102,16 +170,38 @@
     text-transform: uppercase;
 }
 
-.hero-man {
-    min-width: 133px;
-    min-height: 133px;
+.hero-img-man {
+    position: absolute;
+    top: 35px;
+    left: 214px;
+    width: 133px;
+    height: 133px;
     border-radius: 24px;
-    background: url(../img/hero/man@1x.jpg), no-repeat, center, cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-img-man {
+    width: 233px;
+    height: 233px;
+    top: 32px;
+    left: 339px;
+  }
 }
 
 .hero-img-yaht {
     width: 287px;
     height: 167px;
+    margin-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-img-yaht {
+    width: 378px;
+    height: 221px;
+    margin-bottom: 22px;
+  }
 }
 
 .hero-card-description {
@@ -122,7 +212,7 @@
 }
 
 .hero-price {
-    color: var(--darl-blue);
+    color: var(--dark-blue);
     font-size: 48px;
     font-style: normal;
     font-weight: 400;
@@ -132,6 +222,17 @@
 }
 
 .hero-card-text {
-    color: var(--darl-blue);
+    color: var(--dark-blue);
     letter-spacing: -0.63px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-price {
+    font-size: 60px;
+    letter-spacing: -2.7px;
+  }
+  .hero-card-text {
+    font-size: 18px;
+    letter-spacing: -0.81px;
+  }
 }

@@ -40,6 +40,7 @@ img {
 .YachtsBlock {
     background-color: var(--dark-blue);
     backdrop-filter: blur(200px);
+    /* background-image: url(../img/YachtsBlock/LooperGroup.png); */
 }
 
 .YachtsBlock-container {
@@ -117,12 +118,6 @@ img {
     }
   }
 
-/* .waves {
-  background-image: <svg class="" width="" height="">
-    <use href=""></use>
-  </svg>
-} */
-
 .YachtsBlock-title {
     font-family: var(--title-font);
     color: var(--white);
@@ -150,6 +145,17 @@ img {
       max-width: 882px;
     }
   }
+
+.waves {
+  position: absolute;
+  opacity: 0.42105263471603394;
+  z-index: -1;
+  top: -0.5%;
+}
+
+.waves-png {
+  opacity: 0.42105263471603394;
+}
 
 .YachtsBlock-button {
     width: 131px;

@@ -2,15 +2,37 @@
   <div class="rent-container container">
     <div class="rent-img-container">
       <h2 class="rent-block-title">Rent a yacht now</h2>
-
-      <img
-        srcset="
-          ../img/rent/rent-yaht-mobile@1x.jpg 1x,
-          ../img/rent/rent-yaht-mobile@2x.jpg 2x
-        "
-        src="../img/rent/rent-yaht-mobile@1x.jpg"
-        alt="Yacht in sea"
-      />
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ../img/rent/rent-yaht-desktop@1x.png 1x,
+            ../img/rent/rent-yaht-desktop@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../img/rent/rent-yaht-tab@1x.png 1x,
+            ../img/rent/rent-yaht-tab@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 320px)"
+          srcset="
+            ../img/rent/rent-yaht-mobile@1x.png 1x,
+            ../img/rent/rent-yaht-mobile@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="rent-img"
+          srcset="../img/rent/rent-yaht-desktop@1x.png"
+          alt="Yacht in the sea"
+        />
+      </picture>
     </div>
 
     <!-- Form section -->
@@ -23,8 +45,6 @@
             type="text"
             id="user-name"
             name="user-name"
-            placeholder="Full Name"
-            pattern="[A-Za-z]"
           />
         </div>
       </div>
@@ -36,21 +56,18 @@
             type="email"
             id="user-mail"
             name="user-mail"
-            placeholder="Email"
-            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
           />
         </div>
       </div>
       <div class="form-container">
-        <label class="form-label" for="user-mail">Phone Number</label>
+        <div class="blured-circle"></div>
+        <label class="form-label" for="user-phone">Phone Number</label>
         <div class="input-container">
           <input
             class="form-input"
             type="tel"
             id="user-phone"
             name="user-phone"
-            placeholder="Phone Number"
-            pattern="\+[0-9.\-]{12}"
           />
         </div>
       </div>
@@ -61,7 +78,6 @@
           name="user-comment"
           id="user-comment"
           rows="4"
-          placeholder="Comment"
         ></textarea>
       </div>
       <button class="form-btn-submit" type="submit" data-modal-open>
@@ -80,7 +96,10 @@
             <use href="../img/icons/icons.svg#icon-x-close"></use>
           </svg>
         </button>
-        <img class="modal-img" src="" alt="Luxury Yacht" />
+        <div class="modal-img-container">
+          <div class="blured-circle2"></div>
+          <img class="modal-img" src="" alt="Luxury Yacht" />
+        </div>
         <p class="modal-tnx">Thank you</p>
         <p class="modal-text">
           Thank you for choosing Yacht Adventures, your booking details have

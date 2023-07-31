@@ -147,10 +147,17 @@ img {
   }
 
 .waves {
+  display: flex;
   position: absolute;
   opacity: 0.42105263471603394;
   z-index: -1;
   top: -0.5%;
+}
+
+@media only screen and (max-width: 1280px) {
+  .waves {
+    display: none;
+  }
 }
 
 .waves-png {

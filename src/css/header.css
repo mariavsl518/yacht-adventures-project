@@ -1,16 +1,5 @@
 /*----------------header---------------*/
 
-ul,
-ol {
-  margin: 0;
-  padding-left: 0;
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .header-container {
   padding: 24px 20px;
   margin: 0 auto;

@@ -8,7 +8,7 @@
   .div-hero {
     display: flex;
     flex-direction: row-reverse;
-    gap: 124px;
+    gap: 236px;
   }
 }
 
@@ -31,7 +31,7 @@
 }
 
 .hero-title-italic {
-    color: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+    color: var(--linear-green);
 }
 
 @media screen and (min-width: 768px) {
@@ -112,6 +112,7 @@
 
 @media screen and (min-width: 768px) {
     .hero-card {
+        background: url(../img/hero/card-desctop.png) center/cover no-repeat;
         width: 426px;
         height: 598px;
         padding: 32px 32px 64px 32px;
@@ -121,6 +122,7 @@
 
 @media screen and (min-width: 768px) {
     .hero-card {
+        background: url(../img/hero/card-desctop.png) center/cover no-repeat;
         margin-bottom: 164px;
     }
 }
@@ -148,6 +150,62 @@
 
 .circle3 {
     display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .circle1 {
+    width: 316px;
+    height: 316px;
+    border-radius: 316px;
+    transform: rotate(-45.074deg);
+    position: absolute;
+    left: -46px;
+    top: -29px;
+  }
+  .circle2 {
+    display: block;
+    width: 414px;
+    height: 414px;
+    border-radius: 3414px;
+    transform: rotate(-44.094deg);
+    position: absolute;
+    left: -305px;
+    top: -45.4px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+    .circle1 {
+        width: 316px;
+        height: 316px;
+        border-radius: 316px;
+        transform: rotate(-45.074deg);
+        position: absolute;
+        left: 125px;
+        top: 120px;
+    }
+
+    .circle2 {
+        display: block;
+        width: 414px;
+        height: 414px;
+        border-radius: 414px;
+        transform: rotate(-44.094deg);
+        position: absolute;
+        left: 371px;
+        top: 78px;
+    }
+
+    .circle2 {
+        display: block;
+        width: 414px;
+        height: 414px;
+        border-radius: 414px;
+        transform: rotate(-44.094deg);
+        position: absolute;
+        left: 135px;
+        top: 136px;
+    }
 }
 
 .hero-clients {

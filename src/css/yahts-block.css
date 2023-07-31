@@ -117,6 +117,12 @@ img {
     }
   }
 
+/* .waves {
+  background-image: <svg class="" width="" height="">
+    <use href=""></use>
+  </svg>
+} */
+
 .YachtsBlock-title {
     font-family: var(--title-font);
     color: var(--white);
@@ -232,6 +238,13 @@ text-transform: uppercase;
 opacity: 0.5;
 }
 
+.swiper-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
 table {
     border-spacing: 0;
     border: 0px;
@@ -264,6 +277,20 @@ tr:not(:last-child) {
     gap: 14px;
 }
 
+@media only screen and (min-width: 768px) {
+  .swiper-buttons-container {
+    gap: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .swiper-buttons-container {
+    display: none;
+  }
+} {
+
+}
+
 .swiper-button {
     max-width: 46px;
     display: flex;
@@ -272,4 +299,36 @@ tr:not(:last-child) {
     gap: 10px;
     border-radius: 60px;
     border: 1px solid var(--white);
+}
+
+.second {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .second {
+    display: flex;
+  }
+}
+
+.third {
+  display: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  .third {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .left {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .right {
+    display: none;
+  }
 }

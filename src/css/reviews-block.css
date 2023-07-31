@@ -230,8 +230,15 @@
     text-align: center;
 }
 
+@media only screen and (max-width:374px) {
+    .review-desk {
+        width: 248px;
+    }
+}
+    
 @media only screen and (min-width:375px) and (max-width:767px) {
     .review-desk {
+        width: 300px;
     }
 }
 
@@ -240,6 +247,7 @@
         font-size: 16px;
         align-self: stretch;
         letter-spacing: -0.32px;
+        width: 320px;
     }
 }
 

@@ -92,4 +92,25 @@
 /* arrow-up */
 
 
+  .go-top {
+    position: fixed; 
+    right: 50px; 
+    bottom:20px; 
+    display: none; 
+    background-color: transparent;
+    transition: var(--animation);
+  }
+  
+
+  .go-top:hover {
+    transform: scale(1.1);
+  }
+  
+
+  .go-top--show {
+    display: block;
+  }
+
+
+
   

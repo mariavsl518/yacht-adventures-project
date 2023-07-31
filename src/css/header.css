@@ -176,6 +176,11 @@ a {
   text-transform: uppercase;
 }
 
+.modal-icon {
+  stroke-width: 1.3px;
+  stroke: var(--white, #F6F5EF);
+}
+
 .text-header-mobile {
   color: var(--white, #f6f5ef);
   font-size: 14px;

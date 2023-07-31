@@ -99,18 +99,31 @@
     display: none; 
     background-color: transparent;
     transition: var(--animation);
+    cursor: pointer;
   }
   
+  .go-top-icon{
+    width: 44px;
+    height: 44px;
+  }
 
   .go-top:hover {
     transform: scale(1.1);
   }
   
-
   .go-top--show {
     display: block;
   }
 
+@media only screen and (min-width: 768px) {
+  .go-top{
+    bottom: 32px;
+  }
 
+  .go-top-icon {
+    width: 68px;
+    height: 68px;
+  }
+}
 
   

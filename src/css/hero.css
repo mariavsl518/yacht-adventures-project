@@ -43,6 +43,11 @@
     .hero-title-italic {
         font-style: italic;
     }
+
+    .hero-description {
+        width: 539px;
+    }
+
 }
 
 .hero-description {

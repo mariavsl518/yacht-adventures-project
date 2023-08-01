@@ -1,30 +1,33 @@
-window.onscroll = () => {
-  toggleTopButton();
-}
-function scrollToTop(){
-  window.scrollTo({top: 0, behavior: 'smooth'});
-}
 
-function toggleTopButton() {
-  if (document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20) {
-    document.getElementById('back-to-up').classList.remove('d-none');
+
+const goTopBtn = document.querySelector(".go-top");
+
+
+window.addEventListener("scroll", trackScroll);
+
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+
+  const scrolled = window.pageYOffset;
+
+  const coords = document.documentElement.clientHeight;
+
+  if (scrolled > coords) {
+
+    goTopBtn.classList.add("go-top--show");
   } else {
-    document.getElementById('back-to-up').classList.add('d-none');
+
+    goTopBtn.classList.remove("go-top--show");
   }
 }
 
-// Get the "Back to Top" button element
-const backToTopButton = document.getElementById('backToTopBtn');
+function goTop() {
 
-// Function to show or hide the button based on the user's scroll position
-function toggleBackToTopButton() {
-    if (window.scrollY > 0) {
-        backToTopButton.style.display = 'block'; // Show the button when scrolling down
-    } else {
-        backToTopButton.style.display = 'none'; // Hide the button when at the top of the page
-    }
+  if (window.pageYOffset > 0) {
+  
+    window.scrollBy(0, -25); //другий аргумент - це швидкість скролу
+    setTimeout(goTop, 0); 
+  }
 }
 
-// Event listener to trigger the function when the user scrolls
-window.addEventListener('scroll', toggleBackToTopButton);

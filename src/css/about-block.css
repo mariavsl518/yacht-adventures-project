@@ -219,6 +219,28 @@
     position: absolute;
     top: 253px;
   }
+
+  .about-img-last {
+    position: absolute;
+    top: 200px;
+    left: 340px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .about-img-list {
+    height: 774px;
+  }
+  .about-img-first {
+    position: absolute;
+    left: 340px;
+    z-index: -5;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .about-img-second {
+    position: absolute;
+    top: 253px;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .about-img-last {
@@ -226,6 +248,7 @@
     top: 504px;
   }
 }
+
 
 @media only screen and (min-width: 1280px) {
 }

@@ -43,9 +43,6 @@
     .hero-title-italic {
         font-style: italic;
     }
-    .hero-description {
-        width: 539px;
-    }
 }
 
 .hero-description {
@@ -55,6 +52,12 @@
     line-height: 140%;
     letter-spacing: -0.32px;
     margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-description {
+    width: 539px;
+  }
 }
 
 .hero-buttons {

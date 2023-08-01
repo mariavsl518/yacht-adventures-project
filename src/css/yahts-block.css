@@ -8,13 +8,10 @@
 .YachtsBlock {
     background-color: var(--dark-blue);
     backdrop-filter: blur(200px);
-
-    /* position: absolute;
-    top: 2388px; */
-
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
+
   .YachtsBlock {
     top: 2732px;
   }
@@ -25,7 +22,8 @@
     top: 1856px;
   }
 
-}
+} */
+
 
 .YachtsBlock-container {
     position: relative;
@@ -149,6 +147,10 @@
 }
 
 .YachtsBlock-button {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 131px;
     height: 43px;
     border-radius: 60px;
@@ -175,7 +177,6 @@
       margin-left: 167px;
     }
   }
-
   
 /**
   |============================

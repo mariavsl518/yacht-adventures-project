@@ -198,9 +198,12 @@
   z-index: -10;
 }
 @media only screen and (min-width: 768px) {
+  .about-img-second {
+    position: relative;
+  }
   .about-img-last {
     position: absolute;
-    top: 863px;
+    top: 200px;
     left: 340px;
   }
 }

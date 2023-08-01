@@ -1,17 +1,4 @@
 /*----------------header---------------*/
-
-<<<<<<< Updated upstream
-ul,
-ol {
-  margin: 0;
-  padding-left: 0;
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .header-container {
   padding: 24px 20px;
   margin: 0 auto;
@@ -246,14 +233,7 @@ a {
     position: absolute;
     width: 1216px;
     bottom: 7px;
-=======
-a {
-    text-decoration: none;
-  }
-  
-  .header {
-    background: var(--dark-blue, #11131f);
-  }
+
   
   .header-container {
     padding: 24px 20px;
@@ -372,15 +352,13 @@ a {
     position: absolute;
     width: 335px;
     top: 72px;
->>>>>>> Stashed changes
-    height: 1px;
+
+/*     height: 1px;
     border: 1px;
     background-color: rgba(246, 245, 239, 0.2);
   }
-<<<<<<< Updated upstream
-}
-=======
-  .mobile-link::before {
+ */
+/*   .mobile-link::before { 
     content: "";
     display: block;
     position: absolute;
@@ -465,7 +443,7 @@ a {
   }
   /*-----------header media--------------*/
   
-  @media only screen and (min-width: 768px) {
+/*   @media only screen and (min-width: 768px) {
     .menu-toggle {
       display: none;
     }
@@ -515,5 +493,5 @@ a {
       background-color: rgba(246, 245, 239, 0.2);
     }
   }
-  
->>>>>>> Stashed changes
+   */
+

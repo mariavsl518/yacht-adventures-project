@@ -16,8 +16,8 @@
       referrerpolicy="no-referrer"
     />
 
-    <script type="module" crossorigin src="/project-group-16/assets/index-d7900f37.js"></script>
-    <link rel="stylesheet" href="/project-group-16/assets/index-4cb49c4e.css">
+    <script type="module" crossorigin src="/project-group-16/assets/index-0bd3e0f0.js"></script>
+    <link rel="stylesheet" href="/project-group-16/assets/index-2f62ddac.css">
   </head>
   <body>
     <header>
@@ -1010,33 +1010,35 @@
       <h2 class="rent-block-title">Rent a yacht now</h2>
       <picture>
         <source
-          media="(min-width: 1280px)"
           srcset="
             ../img/rent/rent-yaht-desktop@1x.png 1x,
-            ../img/rent/rent-yaht-desktop@2x.png 2x
+            ../img/rent/rent-yaht-desktop@x2.png 2x
           "
+          media="(min-width: 1280px)"
           type="image/png"
         />
         <source
-          media="(min-width: 768px)"
           srcset="
             ../img/rent/rent-yaht-tab@1x.png 1x,
-            ../img/rent/rent-yaht-tab@2x.png 2x
+            ../img/rent/rent-yaht-tab@x2.png 2x
           "
+          media="(min-width: 768px)"
           type="image/png"
         />
         <source
-          media="(min-width: 320px)"
           srcset="
             ../img/rent/rent-yaht-mobile@1x.png 1x,
-            ../img/rent/rent-yaht-mobile@2x.png 2x
+            ../img/rent/rent-yaht-mobile@x2.png 2x
           "
+          media="(min-width: 320px)"
           type="image/png"
         />
         <img
           class="rent-img"
-          srcset="../img/rent/rent-yaht-desktop@1x.png"
+          src="../img/rent/rent-yaht-desktop@1x.png"
           alt="Yacht in the sea"
+          width="259"
+          height="187"
         />
       </picture>
     </div>
@@ -1051,6 +1053,9 @@
             type="text"
             id="user-name"
             name="user-name"
+            required
+            title="First and Last Name with a space in between"
+            pattern="(^[a-zA-Z]{1,30} [a-zA-Z]{1,30}$)"
           />
         </div>
       </div>
@@ -1062,11 +1067,12 @@
             type="email"
             id="user-mail"
             name="user-mail"
+            required
           />
         </div>
       </div>
       <div class="form-container">
-        <div class="blured-circle"></div>
+        
         <label class="form-label" for="user-phone">Phone Number</label>
         <div class="input-container">
           <input
@@ -1074,6 +1080,9 @@
             type="tel"
             id="user-phone"
             name="user-phone"
+            required
+            title="start with +380"
+            pattern="(^[+]380\d{9}$)"
           />
         </div>
       </div>
@@ -1086,7 +1095,7 @@
           rows="4"
         ></textarea>
       </div>
-      <button class="form-btn-submit" type="submit" data-modal-open>
+      <button class="form-btn-submit" type="button" data-modal-open>
         Send
         <svg class="form-btn-icon" width="18" height="8.66">
           <use href="../img/icons/icons.svg#icon-arrow-rightbtn"></use>
@@ -1103,9 +1112,31 @@
           </svg>
         </button>
         <div class="modal-img-container">
-          <div class="blured-circle2"></div>
-          <img class="modal-img" src="" alt="Luxury Yacht" />
-        </div>
+          <picture>
+        <source
+          srcset="
+            ../img/rent/pop-up-yacht-tab@1x.png 1x,
+            ../img/rent/pop-up-yacht-tab@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./img/rent/pop-up-yacht-mobile@1x.png 1x,
+            ./img/rent/pop-up-yacht-mobile@x2.png 2x
+          "
+          media="(min-width: 320px)"
+          type="image/png"
+        />
+        <img
+          class="modal-img"
+          src="/project-group-16/assets/pop-up-yacht-tab@1x-e5c263ba.png"
+          alt="Luxury Yacht"
+          width="287"
+          height="149"
+        />
+      </picture>
         <p class="modal-tnx">Thank you</p>
         <p class="modal-text">
           Thank you for choosing Yacht Adventures, your booking details have

@@ -20,11 +20,6 @@ h1, h2, h3, h4, h5, h6, p {
 	margin-bottom: 0;
 }
 
-ul, ol {
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-left: 0;
-}
 
 img {
 	display: block;
@@ -40,6 +35,21 @@ img {
 .YachtsBlock {
     background-color: var(--dark-blue);
     backdrop-filter: blur(200px);
+    position: absolute;
+    top: 2388px;
+}
+
+@media only screen and (min-width: 768px) {
+  .YachtsBlock {
+    top: 2732px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .YachtsBlock {
+    top: 1856px;
+  }
+
 }
 
 .YachtsBlock-container {
@@ -117,11 +127,13 @@ img {
     }
   }
 
+
 /* .waves {
   background-image: <svg class="" width="" height="">
     <use href=""></use>
   </svg>
 } */
+
 
 .YachtsBlock-title {
     font-family: var(--title-font);
@@ -151,6 +163,25 @@ img {
     }
   }
 
+
+.waves {
+  display: flex;
+  position: absolute;
+  opacity: 0.42105263471603394;
+  z-index: -1;
+  top: -0.5%;
+}
+
+@media only screen and (max-width: 1280px) {
+  .waves {
+    display: none;
+  }
+}
+
+.waves-png {
+  opacity: 0.42105263471603394;
+}
+
 .YachtsBlock-button {
     width: 131px;
     height: 43px;
@@ -178,6 +209,8 @@ img {
       margin-left: 167px;
     }
   }
+
+  
 /**
   |============================
   | Swiper

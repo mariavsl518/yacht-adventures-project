@@ -34,8 +34,8 @@ img {
 .YachtsBlock {
     background-color: var(--dark-blue);
     backdrop-filter: blur(200px);
-    position: absolute;
-    top: 2388px;
+    /* position: absolute;
+    top: 2388px; */
 }
 
 @media only screen and (min-width: 768px) {

@@ -28,8 +28,15 @@
     </symbol>
 
     <symbol id="icon-LooperGroup" viewBox="0 0 23 32">
-  <path fill="#e7e9fc" style="fill: var(--color1, #e7e9fc)" opacity="0.1" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.3333" stroke="#000" d="M31.333 16c0 8.468-6.865 15.333-15.333 15.333s-15.333-6.865-15.333-15.333c0-8.468 6.865-15.333 15.333-15.333s15.333 6.865 15.333 15.333z"></path>
-  </symbol>
+      <path fill="#e7e9fc" style="fill: var(--color1, #e7e9fc)" opacity="0.1" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.3333" stroke="#000" d="M31.333 16c0 8.468-6.865 15.333-15.333 15.333s-15.333-6.865-15.333-15.333c0-8.468 6.865-15.333 15.333-15.333s15.333 6.865 15.333 15.333z"></path>
+    </symbol>
+    <symbol id="icon-arrow-rightbtn" viewBox="0 0 72 32">
+      <path d="m50 0 22 16-22 16V18.771H0v-5.543h50V-.001z"/>
+    </symbol>
+    <symbol id="icon-fontisto_yacht" viewBox="0 0 32 32">
+      <path d="M0 0h32v32h-32v-32z"></path>
+    </symbol>
+
 
   </defs>
 </svg>

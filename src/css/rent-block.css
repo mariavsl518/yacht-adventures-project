@@ -167,6 +167,8 @@
     outline: 0;
     background-color: transparent;
 
+    transition: border-color var(--animation);
+
 }
 
 .form-container:not(:last-child) {
@@ -246,10 +248,13 @@
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.63px;
+
+    transition: color var(--animation), border-color var(--animation);
 }
 
 .form-btn-icon {
     fill: var(--white);
+    transition: fill var(--animation);
 }
 
 @media screen and (min-width: 768px) {
@@ -262,7 +267,6 @@
 .form-btn-submit:hover,
 .form-btn-submit:focus {
     color: var(--light-green);
-    fill: var(--light-green);
     border-color:var(--light-green);
 }
 
@@ -334,6 +338,15 @@
 
 .modal-icon {
     stroke: var(--white);
+    transition: stroke var(--animation);
+}
+
+.modal-btn:hover .modal-icon {
+    stroke: var(--light-green);
+}
+
+.modal-btn:focus .modal-icon {
+    stroke: var(--light-green);
 }
 
 .modal-img-container {

@@ -1,4 +1,5 @@
 
+
 /**
   |============================
   | YachtsBlock section
@@ -7,8 +8,10 @@
 .YachtsBlock {
     background-color: var(--dark-blue);
     backdrop-filter: blur(200px);
-    position: absolute;
-    top: 2388px;
+
+    /* position: absolute;
+    top: 2388px; */
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -99,14 +102,6 @@
     }
   }
 
-
-/* .waves {
-  background-image: <svg class="" width="" height="">
-    <use href=""></use>
-  </svg>
-} */
-
-
 .YachtsBlock-title {
     font-family: var(--title-font);
     color: var(--white);
@@ -134,7 +129,6 @@
       max-width: 882px;
     }
   }
-
 
 .waves {
   display: flex;
@@ -292,8 +286,8 @@ tr:not(:last-child) {
   .swiper-buttons-container {
     display: none;
   }
-} 
 
+} 
 
 
 .swiper-button {

@@ -7,6 +7,21 @@
 .YachtsBlock {
     background-color: var(--dark-blue);
     backdrop-filter: blur(200px);
+    position: absolute;
+    top: 2388px;
+}
+
+@media only screen and (min-width: 768px) {
+  .YachtsBlock {
+    top: 2732px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .YachtsBlock {
+    top: 1856px;
+  }
+
 }
 
 .YachtsBlock-container {
@@ -84,11 +99,13 @@
     }
   }
 
+
 /* .waves {
   background-image: <svg class="" width="" height="">
     <use href=""></use>
   </svg>
 } */
+
 
 .YachtsBlock-title {
     font-family: var(--title-font);
@@ -118,6 +135,25 @@
     }
   }
 
+
+.waves {
+  display: flex;
+  position: absolute;
+  opacity: 0.42105263471603394;
+  z-index: -1;
+  top: -0.5%;
+}
+
+@media only screen and (max-width: 1280px) {
+  .waves {
+    display: none;
+  }
+}
+
+.waves-png {
+  opacity: 0.42105263471603394;
+}
+
 .YachtsBlock-button {
     width: 131px;
     height: 43px;
@@ -145,6 +181,8 @@
       margin-left: 167px;
     }
   }
+
+  
 /**
   |============================
   | Swiper

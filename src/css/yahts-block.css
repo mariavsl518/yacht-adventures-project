@@ -292,9 +292,9 @@ tr:not(:last-child) {
   .swiper-buttons-container {
     display: none;
   }
-} {
+} 
 
-}
+
 
 .swiper-button {
     max-width: 46px;

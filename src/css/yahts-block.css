@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6, p {
 	margin-bottom: 0;
 }
 
+
 img {
 	display: block;
     max-width: 100%;
@@ -48,6 +49,7 @@ img {
   .YachtsBlock {
     top: 1856px;
   }
+
 }
 
 .YachtsBlock-container {
@@ -125,6 +127,14 @@ img {
     }
   }
 
+
+/* .waves {
+  background-image: <svg class="" width="" height="">
+    <use href=""></use>
+  </svg>
+} */
+
+
 .YachtsBlock-title {
     font-family: var(--title-font);
     color: var(--white);
@@ -152,6 +162,7 @@ img {
       max-width: 882px;
     }
   }
+
 
 .waves {
   display: flex;
@@ -198,6 +209,7 @@ img {
       margin-left: 167px;
     }
   }
+
   
 /**
   |============================

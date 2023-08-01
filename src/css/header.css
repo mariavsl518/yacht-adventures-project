@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
-/*----------------header---------------*/
->>>>>>> a578690e743056986aacc2cf9f92e587fb0bf82c
+
 .header-container {
   padding: 24px 20px;
   margin: 0 auto;
@@ -253,9 +250,8 @@
     position: absolute;
     width: 1216px;
     bottom: 7px;
-<<<<<<< HEAD
-=======
 
+  }
   
   .header-container {
     padding: 24px 20px;
@@ -274,14 +270,12 @@
     position: absolute;
     width: 335px;
     bottom: 7px;
->>>>>>> a578690e743056986aacc2cf9f92e587fb0bf82c
+
     height: 1px;
     border: 1px;
     background-color: rgba(246, 245, 239, 0.2);
   }
-<<<<<<< HEAD
-}
-=======
+  }
   
   .header-nav {
     padding: 27px 0;
@@ -521,4 +515,3 @@
   }
    */
 
->>>>>>> a578690e743056986aacc2cf9f92e587fb0bf82c

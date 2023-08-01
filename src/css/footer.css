@@ -2,8 +2,8 @@
       Mobile 
 ================  */
 .footer-container {
-    /* border: 2px solid white;
-  */
+  border-top: 1px solid rgba(246, 245, 239, 0.20);
+  
 }
 
 .footer-flex {}
@@ -19,6 +19,7 @@
     align-items: center;
     gap: 8px;
     color: var(--white);
+    transition: color var(--animation);
 }
 
 
@@ -40,6 +41,7 @@
 
 .footer-logo-link:hover,
 .footer-logo-link:focus {
+    
     fill: var(--hover-green);
     color: var(--hover-green);
 }
@@ -63,6 +65,7 @@
     /* 16.52px */
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    transition: color var(--animation);
 }
 
 .footer-nav-link:hover,
@@ -96,31 +99,85 @@
     list-style-type: none;
 }
 
+.footer-social-item{
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
 .footer-social-link {
+    position: relative;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 32px;
     height: 32px;
-    border: 1px solid #F6F5EF;
-    border-radius: 6px;
-    fill: #F6F5EF;
+    
    
 }
 
-.footer-social-icon {
-    padding: 0;
-    margin: 0;
-    width: 18px;
-    height: 18px;
-   
+.footer-social-bg-f{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(107deg, white, white);
+    -webkit-mask-image: url(../img/icons/facebook.svg);
+    mask-image: url(../img/icons/facebook.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    transition: background-image var(--animation);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-    border-color: var(--hover-green);
-    fill: var(--hover-green); 
+.footer-social-bg-inst{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(107deg, white, white);
+    -webkit-mask-image: url(../img/icons/instagram.svg);
+    mask-image: url(../img/icons/instagram.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    transition: background-image var(--animation);
+}
+
+.footer-social-bg-y{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(107deg, white,white);
+    -webkit-mask-image: url(../img/icons/yuotube.svg);
+    mask-image: url(../img/icons/yuotube.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    transition: background-image var(--animation);
+}
+
+.footer-social-link:hover > .footer-social-bg-f,
+.footer-social-link:focus > .footer-social-bg-f {
+    background-image: linear-gradient(107deg, green, red);
+    -webkit-mask-image: url(../img/icons/facebook.svg);
+    mask-image: url(../img/icons/facebook.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.footer-social-link:hover > .footer-social-bg-inst,
+.footer-social-link:focus > .footer-social-bg-inst {
+    background-image: linear-gradient(107deg, green, red);
+    -webkit-mask-image: url(../img/icons/instagram.svg);
+    mask-image: url(../img/icons/instagram.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.footer-social-link:hover>.footer-social-bg-y,
+.footer-social-link:focus>.footer-social-bg-y {
+    background-image: linear-gradient(107deg, green, red);
+    -webkit-mask-image: url(../img/icons/yuotube.svg);
+    mask-image: url(../img/icons/yuotube.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
 }
 
 .footer-privacy {
@@ -138,9 +195,7 @@
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1,18;
-    /* 14.16px */
-    letter-spacing: 0.36px;
+    line-height: 118%
 }
 
 .footer-gradient {
@@ -210,7 +265,7 @@
     .footer-nav-link {
         color: var(--white, #F6F5EF);
         font-weight: 700;
-        line-height: 1,18;
+        line-height: 118%;
         /* 16.52px */
         letter-spacing: 0.42px;
         text-transform: uppercase;
@@ -248,6 +303,7 @@
         align-items: center;
         width: 40px;
         height: 40px;
+
         border: 1px solid #F6F5EF;
         border-radius: 6px;
         fill: #F6F5EF;
@@ -258,8 +314,10 @@
         margin: 0;
         width: 22px;
         height: 22px;
+
     }
 
+   
     .footer-privacy {
         width: 100%;
         display: flex;
@@ -395,16 +453,6 @@
         align-items: center;
         width: 40px;
         height: 40px;
-        border: 1px solid #F6F5EF;
-        border-radius: 6px;
-        fill: #F6F5EF;
-    }
-
-    .footer-social-icon {
-        padding: 0;
-        margin: 0;
-        width: 22px;
-        height: 22px;
        
     }
 

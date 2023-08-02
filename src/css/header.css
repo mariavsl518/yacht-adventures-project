@@ -1,4 +1,4 @@
-
+/*----------------header---------------*/
 .header-container {
   padding: 24px 20px;
   margin: 0 auto;
@@ -21,15 +21,11 @@
   background-color: rgba(246, 245, 239, 0.2);
 }
 
-.header-nav {
-  padding: 27px 0;
-
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-
 .logo-header-link {
   display: flex;
   align-items: center;
@@ -37,18 +33,12 @@
 }
 
 .logo-header-text {
- color: var(--white);
- font-size: 14px;
- font-weight: 500;
- line-height: 100%;
- letter-spacing: 0.64px;
- text-transform: uppercase;
-}
-@media only screen and (min-width:768px) {
-  .logo-header-text {
-    font-size: 18px;
-    letter-spacing: 0.71px;
-  }
+  color: var(--white, #f6f5ef);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
 
 .nav-list {
@@ -57,7 +47,6 @@
 
 .nav-link {
   color: var(--white, #f6f5ef);
-
   font-weight: 700;
   line-height: 1.7;
   letter-spacing: 0.42px;
@@ -175,6 +164,11 @@
   text-transform: uppercase;
 }
 
+.modal-icon {
+  stroke-width: 1.3px;
+  stroke: var(--white, #F6F5EF);
+}
+
 .text-header-mobile {
   color: var(--white, #f6f5ef);
   font-size: 14px;
@@ -183,26 +177,13 @@
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-.modal-icon {
-  stroke-width: 1.3px;
-  stroke: var(--white, #F6F5EF);
-}
+
 .logo-mobile-link {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.yacht-icon {
-  width: 18px;
-  height: 18px;
-}
-@media only screen and (min-width: 768px) {
-  .yacht-icon {
-  width: 23px;
-  height: 23px;
-  }
-}
 /*-----------header media--------------*/
 
 @media only screen and (min-width: 768px) {
@@ -227,9 +208,11 @@
     background-color: rgba(246, 245, 239, 0.2);
   }
 
-  .header-nav {
+  .logo-header-link {
+    font-size: 18px;
+  }
+  .nav {
     width: 100%;
-    padding: 32px 0;
   }
   .nav-list {
     display: flex;
@@ -251,7 +234,6 @@
     width: 1216px;
     bottom: 7px;
 
-  }
   
   .header-container {
     padding: 24px 20px;
@@ -270,11 +252,9 @@
     position: absolute;
     width: 335px;
     bottom: 7px;
-
     height: 1px;
     border: 1px;
     background-color: rgba(246, 245, 239, 0.2);
-  }
   }
   
   .header-nav {

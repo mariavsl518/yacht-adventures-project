@@ -32,10 +32,10 @@
     font-family: DM Sans;
     font-size: 14px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 114%;
+    font-weight: 500;
+    line-height: 100%;
 
-    letter-spacing: 0.42px;
+    letter-spacing: 0.64px;
     text-transform: uppercase;
 }
 
@@ -155,7 +155,7 @@
 
 .footer-social-link:hover > .footer-social-bg-f,
 .footer-social-link:focus > .footer-social-bg-f {
-    background-image: linear-gradient(107deg, green, red);
+    background-image: var(--linear-gradient);
     -webkit-mask-image: url(../img/icons/facebook.svg);
     mask-image: url(../img/icons/facebook.svg);
     -webkit-mask-repeat: no-repeat;
@@ -164,7 +164,7 @@
 
 .footer-social-link:hover > .footer-social-bg-inst,
 .footer-social-link:focus > .footer-social-bg-inst {
-    background-image: linear-gradient(107deg, green, red);
+    background-image: var(--linear-gradient);
     -webkit-mask-image: url(../img/icons/instagram.svg);
     mask-image: url(../img/icons/instagram.svg);
     -webkit-mask-repeat: no-repeat;
@@ -173,7 +173,7 @@
 
 .footer-social-link:hover>.footer-social-bg-y,
 .footer-social-link:focus>.footer-social-bg-y {
-    background-image: linear-gradient(107deg, green, red);
+    background-image: var(--linear-gradient);
     -webkit-mask-image: url(../img/icons/yuotube.svg);
     mask-image: url(../img/icons/yuotube.svg);
     -webkit-mask-repeat: no-repeat;
@@ -239,13 +239,9 @@
     }
 
     .footer-logo-text {
-        font-family: DM Sans;
+       
         font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 114%;
-
-        letter-spacing: 0.54px;
+        letter-spacing: 0.71px;
         text-transform: uppercase;
     }
 
@@ -303,10 +299,6 @@
         align-items: center;
         width: 40px;
         height: 40px;
-
-        border: 1px solid #F6F5EF;
-        border-radius: 6px;
-        fill: #F6F5EF;
     }
 
     .footer-social-icon {
@@ -329,7 +321,6 @@
     .footer-privacy-text {
         color: rgba(246, 245, 239, 0.50);
         text-align: center;
-        font-family: DM Sans;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -389,12 +380,8 @@
     .footer-logo-text {
         font-family: DM Sans;
         font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 118%;
-
-        letter-spacing: 0.54px;
-        text-transform: uppercase;
+        letter-spacing: 0.71px;
+       
     }
 
     .footer-nav {

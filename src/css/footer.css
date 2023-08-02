@@ -3,6 +3,7 @@
 ================  */
 .footer-container {
   border-top: 1px solid rgba(246, 245, 239, 0.20);
+  position: relative;
 }
 
 .footer-container::after {
@@ -23,7 +24,9 @@
 }
     
 
-.footer-flex{}
+.footer-flex{
+    position: relative;
+}
 
 .footer-logo {
     padding: 41px 0;

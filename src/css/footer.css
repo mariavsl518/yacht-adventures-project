@@ -3,14 +3,12 @@
 ================  */
 .footer-container {
   border-top: 1px solid rgba(246, 245, 239, 0.20);
-  
 }
 
 .footer-flex {}
 
 .footer-logo {
     padding: 41px 0;
-   
 }
 
 .footer-logo-link{
@@ -34,14 +32,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
-
     letter-spacing: 0.64px;
     text-transform: uppercase;
 }
 
 .footer-logo-link:hover,
 .footer-logo-link:focus {
-    
     fill: var(--hover-green);
     color: var(--hover-green);
 }
@@ -88,7 +84,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
-    /* 15.4px */
     text-transform: uppercase;
 }
 
@@ -113,8 +108,6 @@
     align-items: center;
     width: 32px;
     height: 32px;
-    
-   
 }
 
 .footer-social-bg-f{
@@ -201,7 +194,7 @@
 .footer-gradient {
     width: 420px;
     height: 420px;
-    top: 265px;
+    top: 250px;
     left: 65px;
     position: absolute;
     margin: 0;
@@ -255,14 +248,12 @@
         display: inline-flex;
         flex-direction: column;
         gap: 24px;
-
     }
 
     .footer-nav-link {
         color: var(--white, #F6F5EF);
         font-weight: 700;
         line-height: 118%;
-        /* 16.52px */
         letter-spacing: 0.42px;
         text-transform: uppercase;
     }
@@ -280,7 +271,6 @@
         color: var(--white, #F6F5EF);
         font-weight: 700;
         line-height: 110%;
-        /* 15.4px */
         text-transform: uppercase;
 
     }
@@ -308,7 +298,6 @@
         height: 22px;
 
     }
-
    
     .footer-privacy {
         width: 100%;
@@ -332,7 +321,7 @@
     .footer-gradient {
         width: 420px;
         height: 420px;
-        top: 265px;
+        top: 250px;
         left: 340px;
         position: absolute;
         margin: 0;
@@ -374,14 +363,12 @@
     .footer-logo-img {
         width: 32px;
         height: 32px;
-
     }
 
     .footer-logo-text {
         font-family: DM Sans;
         font-size: 18px;
         letter-spacing: 0.71px;
-       
     }
 
     .footer-nav {
@@ -394,14 +381,12 @@
         display: inline-flex;
         flex-direction: row;
         gap: 24px;
-
     }
 
     .footer-nav-link {
         color: var(--white, #F6F5EF);
         font-weight: 700;
         line-height: 118%;
-        /* 16.52px */
         letter-spacing: 0.42px;
         text-transform: uppercase;
     }
@@ -419,7 +404,6 @@
         color: var(--white, #F6F5EF);
         font-weight: 700;
         line-height: 110%;
-        /* 15.4px */
         text-transform: uppercase;
 
     }
@@ -454,19 +438,15 @@
     .footer-privacy-text {
         color: rgba(246, 245, 239, 0.50);
         text-align: center;
-        font-family: DM Sans;
-        font-size: 14px;
-        font-style: normal;
         font-weight: 400;
         line-height: 118%;
-        /* 14.16px */
         letter-spacing: 0.42px;
     }
 
     .footer-gradient {
         width: 420px;
         height: 420px;
-        top: 265px;
+        top: 250px;
         left: 280px;
         position: absolute;
         margin: 0;
@@ -475,13 +455,13 @@
         border-radius: 420px;
         opacity: 0.6;
         background: var(--light-green, #93ABAE);
-        filter: blur(100px);
+        backdrop-filter: blur(100px);
     }
 
     .footer-gradient-right {
         width: 317px;
         height: 317px;
-        top: 280px;
+        top: 260px;
         left: 750px;
         position: absolute;
         margin: 0;

@@ -5,7 +5,25 @@
   border-top: 1px solid rgba(246, 245, 239, 0.20);
 }
 
-.footer-flex {}
+.footer-container::after {
+    position: absolute;
+    top: 270px;
+    left: 175px;
+    z-index: -1;
+    display: block;
+    content: "";
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: #91afba;
+    opacity: .6;
+    filter: blur(100px);
+    transform: rotate(-45deg);
+   
+}
+    
+
+.footer-flex{}
 
 .footer-logo {
     padding: 41px 0;
@@ -216,6 +234,23 @@
         padding-top: 65px;
     }
 
+    .footer-container::after {
+          
+        position: absolute;
+        top: 260px;
+        left: 425px;
+        /* z-index: -1;
+        display: block;
+        content: "";
+        width: 420px;
+        height: 420px;
+        border-radius: 50%;
+        background: #91afba;
+        opacity: .6;
+        filter: blur(100px);
+        transform: rotate(-45deg); */
+     }
+
     .footer-flex {
         display: flex;
         justify-content: space-between;
@@ -343,6 +378,23 @@
     .footer-container {
         padding-top: 65px;
     }
+    
+    .footer-container::after {
+    
+        position: absolute;
+        top: 260px;
+        left: 280px;
+        /* z-index: -1;
+        display: block;
+        content: ""; */
+        /* width: 420px;
+        height: 420px;
+        border-radius: 50%;
+        background: #91afba;
+        opacity: .6;
+        filter: blur(100px);
+        transform: rotate(-45deg); */
+    }
 
     .footer-flex {
         display: flex;
@@ -351,6 +403,23 @@
 
     }
 
+        .footer-flex::after {
+            position: absolute;
+            width: 317px;
+            height: 317px;
+            top: 260px;
+            left: 750px;
+            z-index: -1;
+            display: block;
+            content: "";
+            border-radius: 50%;
+            background: #91afba;
+            opacity: .6;
+            filter: blur(100px);
+            transform: rotate(-45deg);
+    
+             
+        }
 
     .footer-logo {
         padding: 65px 0;
@@ -443,7 +512,7 @@
         letter-spacing: 0.42px;
     }
 
-    .footer-gradient {
+    /* .footer-gradient {
         width: 420px;
         height: 420px;
         top: 250px;
@@ -471,5 +540,5 @@
         opacity: 0.6;
         background: var(--light-green, #93ABAE);
         filter: blur(100px);
-    }
+    } */
 }

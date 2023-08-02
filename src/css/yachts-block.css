@@ -3,10 +3,6 @@
   | YachtsBlock section
   |============================
 */
-.YachtsBlock {
-    background-color: var(--dark-blue);
-    backdrop-filter: blur(200px);
-}
 
 
 .YachtsBlock-container {

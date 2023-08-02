@@ -6,7 +6,6 @@
 
 .YachtsBlock-container {
     position: relative;
-    z-index: 1;
     top: -375px;
 }
 
@@ -91,6 +90,8 @@
     letter-spacing: -0.05em;
     margin-bottom: 40px;
     max-width: 310px;
+    z-index: 1;
+    position: relative;
 }
 
 @media only screen and (min-width: 768px) {

@@ -8,9 +8,11 @@
     backdrop-filter: blur(200px);
 }
 
+
 .YachtsBlock-container {
     position: relative;
     z-index: 1;
+    top: -375px;
 }
 
 .YachtsBlock-blur {
@@ -131,7 +133,6 @@
 }
 
 .YachtsBlock-button {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,6 +149,11 @@
     line-height: 1.1;
     letter-spacing: -0.045em;
     margin-bottom: 80px;
+}
+
+.YachtsBlock-button:hover,
+.YachtsBlock-button:focus {
+  color: var(—hover-green);
 }
 
 @media only screen and (min-width: 768px) {
@@ -173,6 +179,7 @@
     border-radius: 24px;
     padding: 18px 18px 24px;
     margin-bottom: 24px;
+    transition: transform var(—animation);
 }
 
 @media only screen and (min-width: 768px) {
@@ -203,23 +210,23 @@
 }
 
 .yacht-name {
-    color: var(--white);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.045em;
-    text-transform: uppercase;
-    max-width: 177px;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+  max-width: 177px;
 }
 
 .luxury-yachts {
-color: var(--white);
-font-size: 12px;
-font-weight: 400;
-line-height: 1.2;
-letter-spacing: 0.03em;;
-text-transform: uppercase;
-opacity: 0.5;
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.03em;;
+  text-transform: uppercase;
+  opacity: 0.5;
 }
 
 .swiper-container {
@@ -271,9 +278,7 @@ tr:not(:last-child) {
   .swiper-buttons-container {
     display: none;
   }
-
-} 
-
+}
 
 .swiper-button {
     max-width: 46px;
@@ -283,6 +288,11 @@ tr:not(:last-child) {
     gap: 10px;
     border-radius: 60px;
     border: 1px solid var(--white);
+}
+
+.swiper-button:hover,
+.swiper-button:focus {
+  color: var(—hover-green);
 }
 
 .second {

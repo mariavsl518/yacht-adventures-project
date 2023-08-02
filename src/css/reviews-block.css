@@ -1,14 +1,10 @@
-.block-review-section {
-    padding-bottom: 164px;
-}
-
 .block-review-container {
-    padding-bottom: 107px;
+    padding-bottom: 80px;
 }
 
 @media only screen and (min-width:768px) and (max-width:1279px) {
     .block-review-container {
-            padding-bottom: 145px;
+            padding-bottom: 100px;
         }
 }
 
@@ -121,7 +117,7 @@
 
 .block-review-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 24px;
     margin-top: 64px;
 }
@@ -135,8 +131,7 @@
 
 @media only screen and (min-width:768px) and (max-width:1279px) {
     .block-review-list {
-        column-gap: 16px;
-        row-gap: 24px;
+        gap: 16px;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -145,7 +140,6 @@
 
 @media only screen and (min-width:1280px) {
     .block-review-list {
-        flex-wrap: nowrap;
         gap: 32px;
     }
 }
@@ -248,6 +242,58 @@
         align-self: stretch;
         letter-spacing: -0.32px;
         width: 320px;
+    }
+}
+
+.swiper-pagination-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 14px;
+
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+@media only screen and (min-width:768px) and (max-width:1279px) {
+    .swiper-pagination-list {
+        margin-top: 32px;
+    }
+}
+
+@media only screen and (min-width:1280px) {
+    .swiper-pagination-list {
+        display: none;
+    }
+}
+
+.swiper-paginatiom-icon {
+    fill: var(--blue);
+    filter: drop-shadow(2px 1px 3px rgba(24, 55, 91, 0.20));
+    border-radius: 50px;
+}
+
+.swiper-paginatiom-icon:hover,
+.swiper-paginatiom-icon:focus {
+    fill: var(--hover-green);
+    stroke-width: 1px;
+    stroke: var(--light-green);
+    box-shadow: 2px 2px 3px 0px rgba(79, 98, 120, 0.90) inset, 3px 3px 5px 0px rgba(213, 230, 245, 0.40) inset, 0px 0px 4px 0px rgba(46, 68, 87, 0.00) inset;
+    filter: none;
+    transition: var(--animation);
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .item-hidden-mob {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1279px) {
+    .item-hidden-tab {
+        display: none;
     }
 }
 

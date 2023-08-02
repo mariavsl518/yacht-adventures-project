@@ -15,14 +15,52 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <script type="module" crossorigin src="/project-group-16/assets/index-ee5f0229.js"></script>
-    <link rel="stylesheet" href="/project-group-16/assets/index-b1dfad9c.css">
+    <script type="module" crossorigin src="/project-group-16/assets/index-0a7e8965.js"></script>
+    <link rel="stylesheet" href="/project-group-16/assets/index-f1622871.css">
   </head>
   <body>
     <header>
       <!-- Kateryna Bahrin -->
-      <div class="header-container container">
+      
+<div class="header-container container">
+        <nav class="header-nav">
+          <a class="logo-header-link" href="">
+            <img class="yacht-icon" src="./img/ship_3x.png" alt="yacht">
+
+              <span class="logo-header-text">Yacht Adventures</span>
+          </a>
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a class="nav-link active link" href="">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="">Yachts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="">Reviews</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="24" height="24">
+            <use href="./images/icon.svg#icon-modal-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+    </header>
+      <!-- Mobile menu -->
+      <div class="menu-container js-menu-container menu-decor" id="mobile-menu">
+        <a class="logo-mobile-link logo-mobile link" href="./index.html">
+            <img class="yacht-icon" src="./img/ship_3x.png" alt="yacht">
+            <span class="logo-header-text">Yacht Adventures</span>
+        </a>
+        
+<div class="header-container container">
   <nav class="nav">
     <a class="logo-header-link" href="/index.html">
       <svg
@@ -88,6 +126,7 @@
   </button>
 </div>
 
+
 <!-- Mobile menu -->
 <div class="menu-container js-menu-container menu-decor" id="mobile-menu">
   <a class="logo-mobile-link logo-mobile link" href="./index.html">
@@ -132,6 +171,31 @@
     <span class="text-header-mobile">Yacht Adventures</span>
   </a>
 
+
+        <ul class="mobile-menu">
+          <li class="mobile-item">
+            <a class="mobile-link active-mobile link" href="./index.html">
+              About
+            </a>
+          </li>
+          <li class="mobile-item">
+            <a class="mobile-link link" href=""> Yachts </a>
+          </li>
+          <li class="mobile-item">
+            <a class="mobile-link link" href=""> Reviews </a>
+          </li>
+        </ul>
+      </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="js/modal-menu.js"></script>
+
+
   <button class="menu-toggle js-close-menu">
     <svg class="modal-icon" width="24" height="24">
       <use href="./images/icon.svg#icon-x-close"></use>
@@ -151,13 +215,16 @@
   </ul>
 </div>
 
+
 <script
   defer
   src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
   integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
   crossorigin="anonymous"
 ></script>
+
 <script defer src="js/modal-menu.js"></script>
+
 
     </header>
     <main>
@@ -1285,7 +1352,7 @@
               y2="0.347733"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#BEC7C2" />
+              <stop offset="0" stop-color="#BEC7C2" />
               <stop offset="1" stop-color="#A1B5BA" />
             </linearGradient>
           </defs>

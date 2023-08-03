@@ -1,8 +1,6 @@
 .hero {}
 
-.container {}
 
-.div-hero {}
 
 @media only screen and (min-width: 1280px) {
   .div-hero {
@@ -16,19 +14,27 @@
 .hero-text {
     display: flex;
     flex-direction: column;
-    width: 335px;
+    width: 332px;
     margin-bottom: 40px;
 }
 
 .hero-title {
     color: var(--white);
-    font-family: DM Sans;
-    font-size: 60px;
+    font-size: 36px;
     font-weight: 500;
-    line-height: 110%;
-    letter-spacing: -2.7px;
+    line-height: 1.1;
+    letter-spacing: -1.62px;
     margin-bottom: 14px;
+    margin-top: 112px;
+}
+
+@media only screen and (min-width: 768px) {
+   .hero-title {
+    font-size: 60px;
+    letter-spacing: -2.7px;
     margin-top: 64px;
+    margin-bottom: 16px;
+  }
 }
 
 .hero-title-italic {
@@ -51,36 +57,31 @@
 }
 
 .hero-description {
-    width: 332px;
     color: var(--white);
-    font-size: 16px;
-    line-height: 140%;
-    letter-spacing: -0.32px;
+    line-height: 1.4;
+    letter-spacing: -0.28px;
     margin-bottom: 24px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-description {
-    width: 539px;
-  }
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    margin-bottom: 32px;
+}
 }
 
 .hero-buttons {
     display: flex;
     gap: 8px;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: -0.81px;
 }
 
 .button-started {
-    cursor: pointer;
     color: var(--white);
     width: 130px;
     height: 43px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-weight: 700;
+    letter-spacing: -0.63px;
     border-radius: 60px;
     background-color: var(--light-green);
     box-shadow: none;
@@ -95,6 +96,9 @@
 
 .link-explore {
     color: var(--white);
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.63px;
     width: 104px;
     height: 43px;
     display: flex;
@@ -102,10 +106,10 @@
     justify-content: center;
     border-radius: 60px;
     border: 1px solid var(--white);
-    text-decoration: none;
     transition: color var(--animation),
                 border-color var(--animation);
 }
+
 
 .link-explore:hover,
 .link-explore:focus {
@@ -115,10 +119,12 @@
 
 @media only screen and (min-width: 768px) {
   .button-started {
+    font-size: 18px;
     width: 150px;
     height: 48px;
   }
   .link-explore {
+    font-size: 18px;
     width: 117px;
     height: 48px;
   }

@@ -7,10 +7,10 @@
 
 .YachtsBlock-container {
     position: relative;
-    top: -375px;
+    top: -100px;
 }
 
-.YachtsBlock-blur {
+/* .YachtsBlock-blur {
     display: flex;
     position: absolute;
     left: -113px;
@@ -79,7 +79,7 @@
       height: 316px;
       border-radius: 316px;
     }
-  }
+  } */
 
 .YachtsBlock-title {
     font-family: var(--title-font);

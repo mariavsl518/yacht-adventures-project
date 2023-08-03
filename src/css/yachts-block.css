@@ -4,12 +4,15 @@
   |============================
 */
 
+
 .YachtsBlock-container {
     position: relative;
+
     top: -112px;
+
 }
 
-.YachtsBlock-blur {
+/* .YachtsBlock-blur {
     display: flex;
     position: absolute;
     left: -113px;
@@ -78,7 +81,7 @@
       height: 316px;
       border-radius: 316px;
     }
-  }
+  } */
 
 .YachtsBlock-title {
     font-family: var(--title-font);

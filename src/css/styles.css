@@ -8,7 +8,7 @@
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./about-block.css');
-@import url('./yahts-block.css');
+@import url('./yachts-block.css');
 @import url('./services-block.css');
 @import url('./rent-block.css');
 @import url('./reviews-block.css');
@@ -53,8 +53,11 @@
   --animation: .4s cubic-bezier(.5,-0.45,.5,1.45);
 }
 
-body{
+body {
   overflow-x: hidden;
+}
+footer{
+  overflow: hidden;
 }
 
 /* Верстка адаптивна, окрім мобільних пристроїв. 

@@ -3,15 +3,9 @@
   | YachtsBlock section
   |============================
 */
-.YachtsBlock {
-    background-color: var(--dark-blue);
-    backdrop-filter: blur(200px);
-}
 
-
-.YachtsBlock-container {
+/* .YachtsBlock-container {
     position: relative;
-    z-index: 1;
     top: -375px;
 }
 
@@ -84,7 +78,7 @@
       height: 316px;
       border-radius: 316px;
     }
-  }
+  } */
 
 .YachtsBlock-title {
     font-family: var(--title-font);

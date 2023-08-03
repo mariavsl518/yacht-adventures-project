@@ -53,8 +53,11 @@
   --animation: .4s cubic-bezier(.5,-0.45,.5,1.45);
 }
 
-body{
+body {
   overflow-x: hidden;
+}
+footer{
+  overflow: hidden;
 }
 
 /* Верстка адаптивна, окрім мобільних пристроїв. 

@@ -5,7 +5,8 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: baseline;
-    gap: 236px;
+    justify-content: flex-end;
+    gap: 238px;
   }
 }
 

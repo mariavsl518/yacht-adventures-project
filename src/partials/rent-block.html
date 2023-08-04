@@ -1,142 +1,145 @@
 <section class="rent-block" id="rent">
-  <div class="rent-container container">
-    <div class="rent-img-container">
-      <h2 class="rent-block-title">Rent a yacht now</h2>
-      <picture>
-        <source
-          srcset="
-            ./img/rent/rent-yaht-desktop@1x.png 1x,
-            ./img/rent/rent-yaht-desktop@x2.png 2x
-          "
-          media="(min-width: 1280px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-            ./img/rent/rent-yaht-tab@1x.png 1x,
-            ./img/rent/rent-yaht-tab@x2.png 2x
-          "
-          media="(min-width: 768px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-            ./img/rent/rent-yaht-mobile@1x.png 1x,
-            ./img/rent/rent-yaht-mobile@x2.png 2x
-          "
-          media="(min-width: 320px)"
-          type="image/png"
-        />
-        <img
-          class="rent-img"
-          src="./img/rent/rent-yaht-desktop@1x.png"
-          alt="Yacht in the sea"
-          width="259"
-          height="187"
-        />
-      </picture>
-    </div>
+  <div class="container-blur">
+    <div class="rent-container container">
+      <div class="rent-img-container">
+        <h2 class="rent-block-title">Rent a yacht now</h2>
+        <picture>
+          <source
+            srcset="
+              ./img/rent/rent_yaht_desk@1x.png 1x,
+              ./img/rent/rent_yaht_desk@2x.png 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./img/rent/rent_yaht_tab@1x.png 1x,
+              ./img/rent/rent_yaht_tab@2x.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./img/rent/rent_yaht_mob@1x.png 1x,
+              ./img/rent/rent_yaht_mob@2x.png 2x
+            "
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            src="./img/rent/rent_yaht_desk@1x.png"
+            alt="Yacht in the sea"
+            class="rent-img"
+          />
+        </picture>
+      </div>
 
-    <!-- Form section -->
-    <form class="form-block">
-      <div class="form-container">
-        <label class="form-label" for="user-name">Full Name</label>
-        <div class="input-container">
-          <input
-            class="form-input"
-            type="text"
-            id="user-name"
-            name="user-name"
-            required
-            title="First and Last Name with a space in between"
-            pattern="(^[a-zA-Z]{1,30} [a-zA-Z]{1,30}$)"
-          />
+      <!-- Form section -->
+      <form class="form-block" autocomplete="off">
+        <div class="form-container">
+          <label class="form-label" for="user-name">Full Name</label>
+          <div class="input-container name-container">
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              required
+              title="First and Last Name with a space in between"
+              pattern="(^[a-zA-Z]{1,30} [a-zA-Z]{1,30}$)"
+            />
+            <span id="name-error"></span>
+          </div>
         </div>
-      </div>
-      <div class="form-container">
-        <label class="form-label" for="user-mail">Email</label>
-        <div class="input-container">
-          <input
-            class="form-input"
-            type="email"
-            id="user-mail"
-            name="user-mail"
-            required
-          />
+        <div class="form-container">
+          <label class="form-label" for="user-mail">Email</label>
+          <div class="input-container">
+            <input
+              class="form-input"
+              type="email"
+              id="user-mail"
+              name="user-mail"
+              required
+            />
+            <span id="mail-error"></span>
+          </div>
         </div>
-      </div>
-      <div class="form-container">
-        <label class="form-label" for="user-phone">Phone Number</label>
-        <div class="input-container">
-          <input
-            class="form-input"
-            type="tel"
-            id="user-phone"
-            name="user-phone"
-            required
-            title="start with +380"
-            pattern="(^[+]380\d{9}$)"
-          />
+        <div class="form-container">
+          <label class="form-label" for="user-phone">Phone Number</label>
+          <div class="input-container">
+            <input
+              class="form-input"
+              type="tel"
+              id="user-phone"
+              name="user-phone"
+              required
+              title="Begin with +380"
+              pattern="(^[+]380\d{9}$)"
+            />
+            <span id="phone-error"></span>
+          </div>
         </div>
-      </div>
-      <div class="comm-container">
-        <label class="form-label" for="user-comment">Comment</label>
-        <textarea
-          class="form-input comm"
-          name="user-comment"
-          id="user-comment"
-          rows="4"
-        ></textarea>
-      </div>
-      <button class="form-btn-submit" type="button" data-modal-open>
-        Send
-        <svg class="form-btn-icon" width="18" height="8.66">
-          <use href="./img/icons/icons.svg#icon-arrow-rightbtn"></use>
-        </svg>
-      </button>
-    </form>
-
-    <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal-window">
-        <button type="button" class="modal-btn" data-modal-close>
-          <svg class="modal-icon" width="24" height="24">
-            <use href="./img/icons/icons.svg#icon-x-close"></use>
+        <div class="comm-container">
+          <label class="form-label" for="user-comment">Comment</label>
+          <textarea
+            class="form-input comm"
+            name="user-comment"
+            id="user-comment"
+            rows="4"
+          ></textarea>
+        </div>
+        <button class="form-btn-submit" type="submit" data-modal-open>
+          Send
+          <svg class="form-btn-icon" width="18" height="8.66">
+            <use href="./img/icons/icons.svg#icon-arrow-rightbtn"></use>
           </svg>
         </button>
-        <div class="modal-img-container">
-          <picture>
-            <source
-              srcset="
-                ./img/rent/pop-up-yacht-tab@1x.png 1x,
-                ./img/rent/pop-up-yacht-tab@2x.png 2x
-              "
-              media="(min-width: 768px)"
-              type="image/png"
-            />
-            <source
-              srcset="
-                ./img/rent/pop-up-yacht-mobile@1x.png 1x,
-                ./img/rent/pop-up-yacht-mobile@x2.png 2x
-              "
-              media="(min-width: 320px)"
-              type="image/png"
-            />
-            <img
-              class="modal-img"
-              src="./img/rent/pop-up-yacht-tab@1x.png"
-              alt="Luxury Yacht"
-              width="287"
-              height="149"
-            />
-          </picture>
-          <p class="modal-tnx">Thank you</p>
-          <p class="modal-text">
-            Thank you for choosing Yacht Adventures, your booking details have
-            been received and our team will be in touch shortly to confirm your
-            reservation and provide any additional information or assistance you
-            may need.
-          </p>
+      </form>
+
+      <!-- Modal window -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal-window">
+          <button type="button" class="modal-btn" data-modal-close>
+            <svg class="modal-icon" width="24" height="24">
+              <use href="./img/icons/icons.svg#icon-x-close"></use>
+            </svg>
+          </button>
+          <div class="modal-img-container">
+            <picture>
+              <source
+                srcset="
+                  ./img/rent/pop-up-yacht-tab@1x.png 1x,
+                  ./img/rent/pop-up-yacht-tab@2x.png 2x
+                "
+                media="(min-width: 768px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./img/rent/pop-up-yacht-mobile@1x.png 1x,
+                  ./img/rent/pop-up-yacht-mobile@2x.png 2x
+                "
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+              <img
+                class="modal-img"
+                src="./img/rent/pop-up-yacht-tab@1x.png"
+                alt="Luxury Yacht"
+                width="287"
+                height="149"
+              />
+            </picture>
+            <p class="modal-tnx">Thank you</p>
+            <p class="modal-text">
+              Thank you for choosing Yacht Adventures, your booking details have
+              been received and our team will be in touch shortly to confirm
+              your reservation and provide any additional information or
+              assistance you may need.
+            </p>
+          </div>
         </div>
       </div>
     </div>

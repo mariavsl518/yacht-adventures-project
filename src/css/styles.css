@@ -8,7 +8,7 @@
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./about-block.css');
-@import url('./yahts-block.css');
+@import url('./yachts-block.css');
 @import url('./services-block.css');
 @import url('./rent-block.css');
 @import url('./reviews-block.css');
@@ -53,8 +53,11 @@
   --animation: .4s cubic-bezier(.5,-0.45,.5,1.45);
 }
 
-body{
+body {
   overflow-x: hidden;
+}
+footer{
+  overflow: hidden;
 }
 
 /* Верстка адаптивна, окрім мобільних пристроїв. 
@@ -65,8 +68,7 @@ body{
   min-width: 320px;
   max-width: 375px;
   padding: 0 20px;
-  margin: 0 auto;
-}
+  margin: 0 auto;}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -80,6 +82,7 @@ body{
     max-width: 1280px;
   }
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -100,12 +103,17 @@ body{
     position: fixed; 
     right: 50px; 
     bottom:20px; 
-    display: none; 
     background-color: transparent;
     transition: var(--animation);
     cursor: pointer;
   }
   
+  @media only screen and (max-width: 767px) {
+     .go-top{
+      display: none;
+    }
+  }
+
   .go-top-icon{
     width: 44px;
     height: 44px;

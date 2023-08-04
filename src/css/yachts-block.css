@@ -4,12 +4,14 @@
   |============================
 */
 
+
 .YachtsBlock-container {
     position: relative;
+
     top: -112px;
 }
 
-.YachtsBlock-blur {
+/* .YachtsBlock-blur {
     display: flex;
     position: absolute;
     left: -113px;
@@ -78,7 +80,7 @@
       height: 316px;
       border-radius: 316px;
     }
-  }
+  } */
 
 .YachtsBlock-title {
     font-family: var(--title-font);
@@ -90,7 +92,6 @@
     letter-spacing: -0.05em;
     margin-bottom: 40px;
     max-width: 310px;
-    z-index: 1;
     position: relative;
 }
 
@@ -277,6 +278,7 @@ tr:not(:last-child) {
 }
 
 .swiper-button {
+    background-color: transparent;
     max-width: 46px;
     display: flex;
     padding: 14px;
@@ -285,6 +287,7 @@ tr:not(:last-child) {
     border-radius: 60px;
     border: 1px solid var(--white);
 }
+
 
 .swiper-button .left:hover,
 .swiper-button .left:focus {
@@ -296,9 +299,11 @@ tr:not(:last-child) {
   color: var(—hover-green);
 }
 
+
 .swiper-button:hover,
-.swiper-button:focus {
-  color: var(—hover-green);
+.swiper-button:focus,
+.swiper-button:active{
+  border: 1px solid var(—hover-green);
 }
 
 .second {

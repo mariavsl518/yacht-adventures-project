@@ -286,6 +286,16 @@ tr:not(:last-child) {
     border: 1px solid var(--white);
 }
 
+.swiper-button .left:hover,
+.swiper-button .left:focus {
+  color: var(—hover-green);
+}
+
+.swiper-button .right:hover,
+.swiper-button .right:focus {
+  color: var(—hover-green);
+}
+
 .swiper-button:hover,
 .swiper-button:focus {
   color: var(—hover-green);

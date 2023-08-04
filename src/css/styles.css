@@ -57,7 +57,7 @@ body {
   overflow-x: hidden;
 }
 footer{
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 /* Верстка адаптивна, окрім мобільних пристроїв. 
@@ -81,11 +81,6 @@ footer{
   .container {
     max-width: 1280px;
   }
-}
-section{
-  outline: 1px solid red;
-  margin: 0 auto;
-  width: 100vw;
 }
 
 .visually-hidden {

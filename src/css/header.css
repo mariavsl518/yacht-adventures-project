@@ -7,14 +7,6 @@
   float: none;
 }
 
-@media only screen and (max-width: 767px) {
-
-  header {
-    position: fixed;
-    z-index: 998;
-    width: 100%;
-    background: linear-gradient(90deg, rgba(17,19,31,0) 0%, rgba(17,19,31,1) 5%, rgba(17,19,31,1) 95%, rgba(17,19,31,0) 100%);}
-  }
 
 @media only screen and (min-width: 768px) {
   

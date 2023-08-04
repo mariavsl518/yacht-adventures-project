@@ -53,7 +53,7 @@
   --animation: .4s cubic-bezier(.5,-0.45,.5,1.45);
 }
 
-body {
+main {
   overflow-x: hidden;
 }
 footer{

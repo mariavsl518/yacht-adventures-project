@@ -1,4 +1,13 @@
 
+.hero{
+    margin-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+   .hero{
+    margin-top: 64px;
+  }
+}
 
 @media only screen and (min-width: 1280px) {
   .div-hero {
@@ -24,7 +33,6 @@
     line-height: 1.1;
     letter-spacing: -1.62px;
     margin-bottom: 14px;
-    margin-top: 112px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -32,7 +40,6 @@
     width: 698px;
     font-size: 60px;
     letter-spacing: -2.7px;
-    margin-top: 64px;
     margin-bottom: 16px;
   }
 }

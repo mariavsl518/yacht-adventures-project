@@ -68,11 +68,11 @@ footer{
   min-width: 320px;
   max-width: 375px;
   padding: 0 20px;
-  margin: 0 auto;
-}
+  margin: 0 auto;}
 
 @media screen and (min-width: 768px) {
   .container {
+    min-width: 376px;
     max-width: 768px;
     padding: 0 32px;
   }
@@ -80,6 +80,7 @@ footer{
 
 @media screen and (min-width: 1280px) {
   .container {
+    min-width: 769px;
     max-width: 1280px;
   }
 }
@@ -103,12 +104,17 @@ footer{
     position: fixed; 
     right: 50px; 
     bottom:20px; 
-    display: none; 
     background-color: transparent;
     transition: var(--animation);
     cursor: pointer;
   }
   
+  @media only screen and (max-width: 767px) {
+     .go-top{
+      display: none;
+    }
+  }
+
   .go-top-icon{
     width: 44px;
     height: 44px;

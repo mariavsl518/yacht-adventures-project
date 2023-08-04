@@ -37,8 +37,9 @@
     <symbol id="icon-fontisto_yacht" viewBox="0 0 32 32">
       <path d="M0 0h32v32h-32v-32z"></path>
     </symbol>
-
-
-
+    <symbol id="icon-swiper-dot" viewBox="0 0 32 32">
+      <path d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z"/>
+      <path stroke-width="2.462" d="M30.769 16c0 8.157-6.612 14.769-14.769 14.769S1.231 24.157 1.231 16 7.843 1.231 16 1.231 30.769 7.843 30.769 16z"/>
+    </symbol>
   </defs>
 </svg>

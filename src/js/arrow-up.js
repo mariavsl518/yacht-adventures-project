@@ -1,5 +1,4 @@
 
-
 const goTopBtn = document.querySelector(".go-top");
 
 
@@ -30,4 +29,3 @@ function goTop() {
     setTimeout(goTop, 0); 
   }
 }
-

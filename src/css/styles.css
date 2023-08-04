@@ -57,7 +57,7 @@ body {
   overflow-x: hidden;
 }
 footer{
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 /* Верстка адаптивна, окрім мобільних пристроїв. 
@@ -72,7 +72,6 @@ footer{
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 376px;
     max-width: 768px;
     padding: 0 32px;
   }
@@ -80,10 +79,15 @@ footer{
 
 @media screen and (min-width: 1280px) {
   .container {
-    min-width: 769px;
     max-width: 1280px;
   }
 }
+section{
+  outline: 1px solid red;
+  margin: 0 auto;
+  width: 100vw;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

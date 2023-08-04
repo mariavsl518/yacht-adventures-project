@@ -130,11 +130,6 @@
   padding: 0;
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  
-}
-
 .menu-toggle-icon {
   fill: var(--white);
 }
@@ -145,7 +140,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   transform: translateX(105vw);
   display: inline-flex;
@@ -179,9 +174,10 @@
   }
 }
 .modal-nav {
-  padding: 24px 20px;
+  min-width: 320px;
   width: 375px;
   margin: 0 auto;
+  padding: 24px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -9,6 +9,7 @@
     position: relative;
 
     top: -112px;
+
 }
 
 /* .YachtsBlock-blur {
@@ -286,17 +287,6 @@ tr:not(:last-child) {
     gap: 10px;
     border-radius: 60px;
     border: 1px solid var(--white);
-}
-
-
-.swiper-button .left:hover,
-.swiper-button .left:focus {
-  color: var(—hover-green);
-}
-
-.swiper-button .right:hover,
-.swiper-button .right:focus {
-  color: var(—hover-green);
 }
 
 

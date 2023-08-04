@@ -20,6 +20,7 @@
   filter: blur(100px);
   transform: rotate(-45deg);
 }
+
 @media only screen and (min-width: 768px) {
   .about-container::before {
     position: absolute;
@@ -86,7 +87,7 @@
   }
 }
 .about-text {
-  width: 330px;
+  max-width: 330px;
 
   color: var(--white, #f6f5ef);
   font-size: 24px;
@@ -97,7 +98,7 @@
 }
 @media only screen and (min-width: 768px) {
   .about-text {
-    width: 514px;
+    max-width: 514px;
     height: 152px;
     font-size: 32px;
     letter-spacing: -1.44px;
@@ -142,7 +143,7 @@
 .about-item {
   padding: 40px 0;
   margin: 0;
-  width: 160px;
+  max-width: 160px;
 
   color: var(--white, #f6f5ef);
   font-size: 14px;
@@ -160,15 +161,15 @@
     letter-spacing: -0.32px;
   }
   .about-item-first {
-    width: 183px;
+    max-width: 183px;
   }
   .about-item-last {
-    width: 185px;
+    max-width: 185px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .about-item {
-    width: 183px;
+    max-width: 183px;
     padding: 0;
   }
 }

@@ -279,6 +279,7 @@ tr:not(:last-child) {
 }
 
 .swiper-button {
+    background-color: transparent;
     max-width: 46px;
     display: flex;
     padding: 14px;
@@ -288,9 +289,11 @@ tr:not(:last-child) {
     border: 1px solid var(--white);
 }
 
+
 .swiper-button:hover,
-.swiper-button:focus {
-  color: var(—hover-green);
+.swiper-button:focus,
+.swiper-button:active{
+  border: 1px solid var(—hover-green);
 }
 
 .second {

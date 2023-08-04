@@ -365,7 +365,7 @@
     color: var(--dark-blue);
     line-height: 140%;
     letter-spacing: -0.63px;
-    width: 169px;
+    max-width: 169px;
 }
 
 @media only screen and (min-width: 768px) {

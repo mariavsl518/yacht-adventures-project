@@ -98,44 +98,26 @@ footer{
 
 /* arrow-up */
 
-
   .go-top {
     position: fixed; 
     right: 50px; 
-    bottom:20px; 
+    bottom:50px; 
+    cursor: pointer; 
+    display: none;
+    font-size: 20px; 
+    padding: 15px 10px;
     background-color: transparent;
     transition: var(--animation);
-    cursor: pointer;
   }
   
-  @media only screen and (max-width: 767px) {
-     .go-top{
-      display: none;
-    }
-  }
-
-  .go-top-icon{
-    width: 44px;
-    height: 44px;
-  }
 
   .go-top:hover {
     transform: scale(1.1);
   }
   
+
   .go-top--show {
     display: block;
   }
-
-@media only screen and (min-width: 768px) {
-  .go-top{
-    bottom: 32px;
-  }
-
-  .go-top-icon {
-    width: 68px;
-    height: 68px;
-  }
-}
-
+  
   

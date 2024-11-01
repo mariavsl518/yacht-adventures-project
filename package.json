@@ -1,11 +1,11 @@
 {
-  "name": "project-group-16",
+  "name": "yacht-adventures-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-group-16/",
+    "build": "vite build --base=/yacht-adventures-project/",
     "preview": "vite preview"
   },
   "devDependencies": {
